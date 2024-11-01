@@ -1,36 +1,40 @@
 # Seulgi Ko - Business/Data Analysis Portfolio 
 
-### About me 
+## About me 
 Explain about myself 
 
 One sentence about this page 
 
-### Table Content 
+## Table Content 
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
    * [Machine Learning Projects](#ML)
-   * [Decision Model]
-* Tableau
+* [Tableau](#Tableau)
+* [Decision Model](#DM) 
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
-### Projects 
+## Projects 
 <a name="Default"></a>
 
-### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
+## Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
 **Code:** [Jupyter]()
 
-### Machine Learning Projects 
+## Machine Learning Projects 
 <a name="ML"></a>
 
-#### Bikeshare 
-#### 
+### Bikeshare 
+###
 
-### NY State Environment Conservation Project 
+## NY State Environment Conservation Project 
 <a name="SQL"></a>
 
+## Tableau 
+<a name="Tableau"></a>
 
+## Decision Model 
+<a name="DM"></a>
 
 ### Skills/License 
 <a name="Skill"></a>
