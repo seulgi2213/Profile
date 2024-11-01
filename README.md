@@ -20,7 +20,13 @@ One sentence about this page
 
 ### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
 **Code:** [Jupyter]()
-
+* Description: 
+* Role:
+* Team Size: 4
+* Skills:
+    * A
+    * B
+      
 ### Machine Learning Projects 
 <a name="ML"></a>
 
