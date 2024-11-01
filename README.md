@@ -31,5 +31,5 @@ One sentence about this page
 
 ### Contacts 
 <a name="Contact"></a>
-* Linkedin : [Seulgi_Ko](http://www.linkedin.com/in/seulgi-ko)
+* Linkedin : [Seulgi Ko](http://www.linkedin.com/in/seulgi-ko)
 * Email: seulgi2213@gmail.com
