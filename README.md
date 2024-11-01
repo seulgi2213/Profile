@@ -8,6 +8,8 @@ One sentence about this page
 ### Table Content 
 * About me
 * Projects
-   * Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction
+   * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
 * Datacamp Case Study
 
+### Projects 
+<a name="Default"></a>
