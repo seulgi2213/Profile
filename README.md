@@ -17,7 +17,7 @@ One sentence about this page
 
 
 **Main Page:** [LINK](https://github.com/seulgi2213/Wells-Fargo-Default-Rate-Prediction)
-**Code:** [Jupyter]()
+***Code:*** [Jupyter]()
 
 
 ### Skills/License 
