@@ -18,22 +18,22 @@ One sentence about this page
 ## Projects 
 <a name="Default"></a>
 
-## Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
+### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
 **Code:** [Jupyter]()
 
-## Machine Learning Projects 
+### Machine Learning Projects 
 <a name="ML"></a>
 
-### Bikeshare 
-###
+#### Bikeshare 
+####
 
-## NY State Environment Conservation Project 
+### NY State Environment Conservation Project 
 <a name="SQL"></a>
 
-## Tableau 
+### Tableau 
 <a name="Tableau"></a>
 
-## Decision Model 
+### Decision Model 
 <a name="DM"></a>
 
 ### Skills/License 
