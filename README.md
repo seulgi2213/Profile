@@ -36,7 +36,7 @@ One sentence about this page
 ### Decision Model 
 <a name="DM"></a>
 
-### Skills/License 
+## Skills/License 
 <a name="Skill"></a>
 
 * Programming Languages & Tools: Python(Pandas, NumPy, MatPlotLib, Scikit-learn), SQL, PySpark, AWS
@@ -44,7 +44,7 @@ One sentence about this page
 * Visualization Tool: Tableau
 * License: CPA, Washington (License No: 40792) — Expiration Date: 06/30/2026
 
-### Contacts 
+## Contacts 
 <a name="Contact"></a>
 * Linkedin : [Seulgi Ko](http://www.linkedin.com/in/seulgi-ko)
 * Email: seulgi2213@gmail.com
