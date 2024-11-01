@@ -1,16 +1,15 @@
 # Seulgi Ko - Business/Data Analysis Portfolio 
 
 ## About me 
-Explain about myself 
+Hello! I’m Seulgi Ko, an accounting and finance professional with experience as a consultant at a Big 4 firm in Korea. I have worked with clients from various industries, including large banks, cryto, electronics, and e-commerce, providing insights and solutions tailored to their unique needs. Leveraging this business knowledge alongside technical skills from my MS in Business Analytics at George Washington University, I am equipped to drive data-driven solutions in finance/accounting and analytics.
 
-One sentence about this page 
+On this dashboard, you will be able to explore projects and coursework that showcase my expertise in machine learning, SQL, and Python.
 
 ## Table Content 
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
    * [Machine Learning Projects](#ML)
-* [Tableau](#Tableau)
 * [Decision Model](#DM) 
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
@@ -48,7 +47,6 @@ One sentence about this page
 
 * Programming Languages & Tools: Python(Pandas, NumPy, MatPlotLib, Scikit-learn), SQL, PySpark, AWS
 * Statistical Analysis & Data Processing: R, MS Excel (Solver, Pivot Table, VLOOKUP)
-* Visualization Tool: Tableau
 * License: CPA, Washington (License No: 40792) — Expiration Date: 06/30/2026
 
 ## Contacts 
