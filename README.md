@@ -8,6 +8,9 @@ One sentence about this page
 ### Table Content 
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
+   * [NY State Environment Conservation Project](#SQL)
+   * [Machine Learning Projects](#ML)
+   * [Decision Model]
 * Tableau
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
@@ -16,10 +19,17 @@ One sentence about this page
 <a name="Default"></a>
 
 ### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
-**Main Page:** [LINK](https://github.com/seulgi2213/Wells-Fargo-Default-Rate-Prediction)<br>
 **Code:** [Jupyter]()
 
-### Bikeshare 
+### Machine Learning Projects 
+<a name="ML"></a>
+
+#### Bikeshare 
+#### 
+
+### NY State Environment Conservation Project 
+<a name="SQL"></a>
+
 
 
 ### Skills/License 
