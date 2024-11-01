@@ -7,7 +7,7 @@ One sentence about this page
 
 ### Table Content 
 * Projects
-** [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
+    *[Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
 * Tableau
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
