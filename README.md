@@ -7,8 +7,8 @@ One sentence about this page
 
 ### Table Content 
 * Projects
-   * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
-* Datacamp Case Study
+  *[Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
+* Tableau
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
@@ -21,15 +21,13 @@ One sentence about this page
 
 
 
-
-
-
-
-
-
-
 ### Skills/License 
 <a name="Skill"></a>
+
+* *Programming Languages & Tools*: Python(Pandas, NumPy, MatPlotLib, Scikit-learn), SQL, PySpark, AWS
+* Statistical Analysis & Data Processing: R, MS Excel (Solver, Pivot Table, VLOOKUP)
+* Visualization Tool: Tableau
+* License: CPA, Washington (License No: 40792) — Expiration Date: 06/30/2026
 
 ### Contacts 
 <a name="Contact"></a>
