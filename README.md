@@ -23,6 +23,5 @@ One sentence about this page
 ### Skills/License 
 <a name="Skill"></a>
 
-
 ### Contacts 
 <a name="Contact"></a>
