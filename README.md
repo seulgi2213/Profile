@@ -9,8 +9,8 @@ One sentence about this page
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
 * Datacamp Case Study
-* Skills/License(#Skill)
-* Contacts(#Contact)
+* Skills/License (#Skill)
+* Contacts (#Contact)
 
 ### Projects 
 <a name="Default"></a>
@@ -21,8 +21,8 @@ One sentence about this page
 
 
 ### Skills/License
-<b name="Skill"></b>
+<a name="Skill"></a>
 
 
 ### Contacts 
-<c name="Contact"></c>
+<a name="Contact"></a>
