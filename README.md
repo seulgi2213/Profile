@@ -6,7 +6,7 @@ Explain about myself
 One sentence about this page 
 
 ### Table Content 
-* Projects
+* Projects<br>
   *[Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
 * Tableau
 * [Skills/License](#Skill)
