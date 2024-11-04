@@ -10,7 +10,6 @@ On this dashboard, you will be able to explore projects and coursework that show
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
    * [Machine Learning Projects](#ML)
-* [Decision Model](#DM) 
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
@@ -47,6 +46,7 @@ On this dashboard, you will be able to explore projects and coursework that show
 
 * Programming Languages & Tools: Python(Pandas, NumPy, MatPlotLib, Scikit-learn), SQL, PySpark, AWS
 * Statistical Analysis & Data Processing: R, MS Excel (Solver, Pivot Table, VLOOKUP)
+* PUT Decison Model I learned 
 * License: CPA, Washington (License No: 40792) — Expiration Date: 06/30/2026
 
 ## Contacts 
