@@ -34,12 +34,12 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
    	  	* Merging Datasets: The Performance and Origination datasets were merged using LOAN SEQUENCE NUMBER to provide a complete loan lifecycle view.
 	  	* Calculating ELTV: To fill missing Estimated Loan-to-Value (ELTV) ratios, ELTV was calculated as the ratio of the current unpaid balance to the adjusted housing price, factoring in House Price Index changes since loan origination.
 
-* Variable Selection
-	•	Target Variable: Probability of default.
-	•	Input Variables:
-	•	Static Variables: Origination Credit Score, Original Interest Rate, Property Type, Loan Purpose, etc.
-	•	Dynamic Variables: Current Unpaid Balance, Loan Delinquency Status, Loan Age, Estimated Loan-to-Value.
-	•	Macroeconomic Variables: Current Interest Rate, Unemployment Rate, Inflation Rate, House Price Index (nationally used for nulls at the state level).
+- **Variables Selection**
+  	* Target Variable: Probability of default.
+	* Input Variables:
+		* Static Variables: Origination Credit Score, Original Interest Rate, Property Type, Loan Purpose, etc.
+		* Dynamic Variables: Current Unpaid Balance, Loan Delinquency Status, Loan Age, Estimated Loan-to-Value.
+		* Macroeconomic Variables: Current Interest Rate, Unemployment Rate, Inflation Rate, House Price Index (nationally used for nulls at the state level).
 
 
 #### Creating Stacked Datframe for Time-Series Analysis 
