@@ -18,7 +18,10 @@ On this dashboard, you will be able to explore projects and coursework that show
 <a name="Default"></a>
 
 ### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
+
+#### Main Codes 
 **Code:** [Preprocessing]() <br>
+**Code:** [StackDataset]() <br>
 **Code:** [Modeling]() <br>
 
 #### Overview 
@@ -28,13 +31,7 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 * Single-family home loans from Freddie Mac, spanning from 2000 to Q2 2023, consisting of origination and performance data, with a focus on 30-year fixed-rate mortgages.
 * Macroeconomic variables, including the housing price index, inflation rate, and unemployment rate.
 
-### 
-* Description: 
-* Role:
-* Team Size: 4
-* Skills:
-    * A
-    * B
+#### 
       
 ### Machine Learning Projects 
 <a name="ML"></a>
