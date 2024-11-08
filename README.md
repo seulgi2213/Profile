@@ -88,6 +88,7 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 - **Code3:** [Modeling](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb) <br>
 
 - **XGBoost2 Result**
+  
 |     | Model    | test_ACC | test_AUC | test_F1 | test_LogLoss | test_Brier | train_ACC | train_AUC | train_F1 | train_LogLoss | train_Brier |
 |-----|----------|----------|----------|---------|--------------|------------|-----------|-----------|----------|---------------|-------------|
 |  0  | XGB2     | 0.6656   | 0.7361   | 0.6367  | 0.6137       | 0.2125     | 0.7004    | 0.7695    | 0.7083   | 0.5729        | 0.1952      |
