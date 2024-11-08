@@ -20,9 +20,9 @@ On this dashboard, you will be able to explore projects and coursework that show
 ### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
 
 #### Main Codes 
-- **Code:** [Preprocessing](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb) <br>
-- **Code:** [StackDataset](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb) <br>
-- **Code:** [Modeling](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb) <br>
+- **Code1:** [Preprocessing](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb) <br>
+- **Code2:** [StackDataset](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb) <br>
+- **Code3:** [Modeling](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb) <br>
 
 #### Overview 
 The significance of the mortgage market is immense, highlighting its pivotal role in financial markets. Key business outcomes for mortgage models include achieving interpretability and accuracy to foster trust and understanding among stakeholders, as well as providing default predictions over an extended period for effective risk management. Risk mitigation efforts aim to enhance the stability of mortgage-backed securities, particularly by addressing potential downward trends. Adaptability across diverse economic scenarios, including stress testing during crises like COVID-19, is vital for evaluating the model’s robustness. The objective of this project is to develop a predictive model for mortgage default over the next 24 months. The model will integrate various static, dynamic, and macroeconomic variables to enhance accuracy and robustness.
