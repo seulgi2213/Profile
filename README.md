@@ -27,16 +27,12 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 
 #### Preprocessing and Sampling Techniques 
 - **Code1:** [Preprocessing](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb) <br>
-
-
-#### Creating Stacked Datframe for Time-Series Analysis 
-- **Code2:** [StackDataset](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb) <br>
-* Data Cleaning
-	•	The initial dataset had 64 variables and over 2.4 billion rows, processed with PySpark on GWU’s High Power Computing system.
-	•	Key preprocessing steps:
-	•	Handling Missing Data: Columns with over 95% null values were removed.
-	•	Merging Datasets: The Performance and Origination datasets were merged using LOAN SEQUENCE NUMBER to provide a complete loan lifecycle view.
-	•	Calculating ELTV: To fill missing Estimated Loan-to-Value (ELTV) ratios, ELTV was calculated as the ratio of the current unpaid balance to the adjusted housing price, factoring in House Price Index changes since loan origination.
+- **Data Cleaning**
+	* The initial dataset had 64 variables and over 2.4 billion rows, processed with PySpark on GWU’s High Power Computing system.
+	* Key preprocessing steps:
+	* Handling Missing Data: Columns with over 95% null values were removed.
+	* Merging Datasets: The Performance and Origination datasets were merged using LOAN SEQUENCE NUMBER to provide a complete loan lifecycle view.
+	* Calculating ELTV: To fill missing Estimated Loan-to-Value (ELTV) ratios, ELTV was calculated as the ratio of the current unpaid balance to the adjusted housing price, factoring in House Price Index changes since loan origination.
 
 * Variable Selection
 	•	Target Variable: Probability of default.
@@ -44,6 +40,11 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 	•	Static Variables: Origination Credit Score, Original Interest Rate, Property Type, Loan Purpose, etc.
 	•	Dynamic Variables: Current Unpaid Balance, Loan Delinquency Status, Loan Age, Estimated Loan-to-Value.
 	•	Macroeconomic Variables: Current Interest Rate, Unemployment Rate, Inflation Rate, House Price Index (nationally used for nulls at the state level).
+
+
+#### Creating Stacked Datframe for Time-Series Analysis 
+- **Code2:** [StackDataset](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb) <br>
+
 
 #### XGBoost Modeling in PiML 
 - **Code3:** [Modeling](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb) <br>
