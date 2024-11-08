@@ -79,7 +79,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
    - **SOURCE**: Differentiates original rows (“orig”) from generated rows for forecasting (“Duplicated”).
 
 
-### Example of Stacked Data
+4. **Example of Stacked Data**
 
 | Group | DEFAULT | Horizon | Source | LOAN SEQUENCE NUMBER | MONTHLY REPORTING PERIOD | CURRENT ACTUAL UPB | CURRENT LOAN DELINQUENCY STATUS | LOAN AGE | CURRENT INTEREST RATE |
 |-------|---------|---------|--------|-----------------------|---------------------------|---------------------|---------------------------------|----------|------------------------|
