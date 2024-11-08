@@ -20,7 +20,7 @@ On this dashboard, you will be able to explore projects and coursework that show
 ### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
 
 #### Main Codes 
-**Code:** [Preprocessing]() <br>
+**Code:** [Preprocessing](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb) <br>
 **Code:** [StackDataset]() <br>
 **Code:** [Modeling]() <br>
 
