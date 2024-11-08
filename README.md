@@ -68,16 +68,49 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
   - **Additional Columns for Analysis**
 	  -	**HORIZON**: Tracks historical data for each duplicated row, with each horizon representing one month prior to the snapshot.
 	  - **SOURCE**: Distinguishes between original rows (“orig”) and generated rows for forecasting (“Duplicated”).
+    - 
+- **Example of Stacked Data**
+| Group | DEFAULT | Horizon | Source | LOAN SEQUENCE NUMBER | MONTHLY REPORTING PERIOD | CURRENT ACTUAL UPB | CURRENT LOAN DELINQUENCY STATUS | LOAN AGE | CURRENT INTEREST RATE |
+|-------|---------|---------|--------|-----------------------|---------------------------|---------------------|---------------------------------|----------|-----------------------|
+| 0     | 0       | 0       | orig   | F00Q10000066          | 2000-02                   | 132000.0            | 0                               | 0        | 8.0                   |
+| 1     | 0       | 0       | orig   | F00Q10000066          | 2000-03                   | 132000.0            | 0                               | 1        | 8.0                   |
+| 1     | 0       | 1       | Dupli… | F00Q10000066          | 2000-02                   | 132000.0            | 0                               | 0        | 8.0                   |
+| 2     | 0       | 0       | orig   | F00Q10000066          | 2000-04                   | 131000.0            | 0                               | 2        | 8.0                   |
+| 2     | 0       | 1       | Dupli… | F00Q10000066          | 2000-03                   | 132000.0            | 0                               | 1        | 8.0                   |
+| 2     | 0       | 2       | Dupli… | F00Q10000066          | 2000-02                   | 132000.0            | 0                               | 0        | 8.0                   |
+| 3     | 0       | 0       | orig   | F00Q10000066          | 2000-05                   | 131000.0            | 0                               | 3        | 8.0                   |
+| 3     | 0       | 1       | Dupli… | F00Q10000066          | 2000-04                   | 131000.0            | 0                               | 2        | 8.0                   |
+| 3     | 0       | 2       | Dupli… | F00Q10000066          | 2000-03                   | 132000.0            | 0                               | 1        | 8.0                   |
+| 3     | 0       | 3       | Dupli… | F00Q10000066          | 2000-02                   | 132000.0            | 0                               | 0        | 8.0                   |
+
 
 #### XGBoost Modeling in PiML 
 - **Code3:** [Modeling](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb) <br>
 
 - **XGBoost2 Result**
-	|     | Model    | test_ACC | test_AUC | test_F1 | test_LogLoss | test_Brier | train_ACC | train_AUC | train_F1 | train_LogLoss | train_Brier |
-	|-----|----------|----------|----------|---------|--------------|------------|-----------|-----------|----------|---------------|-------------|
-	|  0  | XGB2     | 0.6656   | 0.7361   | 0.6367  | 0.6137       | 0.2125     | 0.7004    | 0.7695    | 0.7083   | 0.5729        | 0.1952      |
-	|  1  | XGB2_v2  | 0.6681   | 0.7287   | 0.6416  | 0.6257       | 0.2160     | 0.7003    | 0.7702    | 0.7070   | 0.5726        | 0.1950      |
-      
+|     | Model    | test_ACC | test_AUC | test_F1 | test_LogLoss | test_Brier | train_ACC | train_AUC | train_F1 | train_LogLoss | train_Brier |
+|-----|----------|----------|----------|---------|--------------|------------|-----------|-----------|----------|---------------|-------------|
+|  0  | XGB2     | 0.6656   | 0.7361   | 0.6367  | 0.6137       | 0.2125     | 0.7004    | 0.7695    | 0.7083   | 0.5729        | 0.1952      |
+|  1  | XGB2_v2  | 0.6681   | 0.7287   | 0.6416  | 0.6257       | 0.2160     | 0.7003    | 0.7702    | 0.7070   | 0.5726        | 0.1950      |
+
+
+- **Accuracy Descriptions of XGB2_v2 Model**
+|         |  ACC   |  AUC   |   F1   | LogLoss |  Brier |
+|---------|--------|--------|--------|---------|--------|
+|  Train  | 0.7003 | 0.7702 | 0.7070 |  0.5726 | 0.1950 |
+|  Test   | 0.6681 | 0.7287 | 0.6414 |  0.6257 | 0.2160 |
+|   Gap   |-0.0323 |-0.0415 |-0.0656 |  0.0530 | 0.0210 |
+
+<img width="500" alt="image" src="https://github.com/celinawong21/WF-ML-Model/assets/159848729/d684fd69-ea70-461c-a996-7fd36acbe9e9">
+
+- **Residual Box Plot of Predicted Default Variable from XGB2_v2 Model**
+
+<img width= "650" alt = "image" src= "https://github.com/celinawong21/WF-ML-Model/assets/159848729/9e8f2fcd-ef9f-4825-8d33-c5effd0d0bf7">
+
+- **Predicted vs. Actual Default Rate: XGB2_v2**
+
+<img width="600" alt="image" src="https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522">
+
 ### Machine Learning Projects 
 <a name="ML"></a>
 
