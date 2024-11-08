@@ -5,6 +5,8 @@ Hello! I’m Seulgi Ko, an accounting and finance professional with experience a
 
 On this dashboard, you can explore projects and coursework that showcase my expertise in analytical skills, including modeling and machine learning, along with technical proficiency in PySpark, SQL, and Python.
 
+---
+
 ## Table Content 
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
@@ -13,11 +15,12 @@ On this dashboard, you can explore projects and coursework that showcase my expe
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
+---
+
 ## Projects
 
 ### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction <a name="Default"></a>
 
----
 
 #### Overview
 The mortgage market plays a crucial role in financial markets. This project develops a predictive model for mortgage default over the next 24 months, focusing on interpretability, accuracy, and risk management. Key objectives include:
@@ -117,7 +120,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
   ![Predicted vs. Actual](https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522)
 
----
 
 ### Machine Learning Projects 
 <a name="ML"></a>
@@ -128,8 +130,12 @@ The mortgage market plays a crucial role in financial markets. This project deve
 ### NY State Environment Conservation Project 
 <a name="SQL"></a>
 
+---
+
 ### Tableau 
 <a name="Tableau"></a>
+
+---
 
 ## Skills/License 
 <a name="Skill"></a>
@@ -138,6 +144,8 @@ The mortgage market plays a crucial role in financial markets. This project deve
 * Statistical Analysis & Data Processing: R, MS Excel (Solver, Pivot Table, VLOOKUP)
 * PUT Decison Model I learned 
 * License: CPA, Washington (License No: 40792) — Expiration Date: 06/30/2026
+
+---
 
 ## Contacts 
 <a name="Contact"></a>
