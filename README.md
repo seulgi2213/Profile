@@ -55,10 +55,23 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
    
 #### Creating Stacked Datframe for Time-Series Analysis 
 - **Code2:** [StackDataset](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb) <br>
+- **Overview of Time Series Horizon**
+  - Our predictive loan default model uses a paneled time series approach to forecast loan defaults over future periods. Each prediction horizon (future period) is based on all available historical data up to a certain snapshot time (s), where predictions are made for times (t) beyond s. This approach creates pairs of snapshot-forecast data, forming what we refer to as stacked data. To forecast each loan’s default probability over a 24-month period, we duplicate each row (last row) 24 times. This time series horizon approach, chosen over traditional time series modeling, provides more robust long-term predictions by reducing reliance on initial data points.
 
+- **Creating a Stacked Dataset**
+  - **Vectorized Process**
+    - **Sampling**: We start with 3,000 loans from each year over 24 years, then convert this into a time series format.
+	  - **Minimum LOAN AGE**: Each loan’s minimum LOAN AGE is identified as its starting point.
+	  - **Chronological Order**: If multiple loans have the same LOAN AGE at a given horizon, we adjust the dataset to ensure each loan’s age progresses sequentially.
+	  - **Replication**: Each row is duplicated 24 times to simulate a 24-month forecast period, allowing for extended loan behavior predictions.
+
+  - **Additional Columns for Analysis**
+	  -	**HORIZON**: Tracks historical data for each duplicated row, with each horizon representing one month prior to the snapshot.
+	  - **SOURCE**: Distinguishes between original rows (“orig”) and generated rows for forecasting (“Duplicated”).
 
 #### XGBoost Modeling in PiML 
 - **Code3:** [Modeling](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb) <br>
+
       
 ### Machine Learning Projects 
 <a name="ML"></a>
