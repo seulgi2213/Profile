@@ -38,7 +38,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 ### Preprocessing and Sampling Techniques
 
-- **Code**: [Preprocessing Notebook](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb)
+- **Code**: [Preprocessing Jupyter](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb)
 
 1. **Data Cleaning**
    - **Scope**: The initial dataset had 64 variables and over 2.4 billion rows, processed with PySpark on GWU’s High Power Computing system.
@@ -62,7 +62,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 ### Creating the Stacked Dataset for Time-Series Analysis
 
-- **Code**: [StackDataset Notebook](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb)
+- **Code**: [StackDataset Jupyter](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb)
 
 1. **Overview of Time Series Horizon**
    - The predictive loan default model uses a paneled time series approach to forecast loan defaults. Each horizon is based on historical data up to a snapshot time (s), with forecasts for future times (t). 
@@ -92,7 +92,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 ### XGBoost Modeling in PiML
 
-- **Code**: [Modeling Notebook](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb)
+- **Code**: [Modeling Jupyter](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb)
 
 1. **XGBoost Results**
 
