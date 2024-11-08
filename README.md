@@ -40,7 +40,15 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 		* Static Variables: Origination Credit Score, Original Interest Rate, Property Type, Loan Purpose, etc.
 		* Dynamic Variables: Current Unpaid Balance, Loan Delinquency Status, Loan Age, Estimated Loan-to-Value.
 		* Macroeconomic Variables: Current Interest Rate, Unemployment Rate, Inflation Rate, House Price Index (nationally used for nulls at the state level).
-
+    
+- **Sampling Techniques**
+	* Methodology
+		* Sampling Strategy: Given the dataset’s size, strategic sampling was used based on CURRENT LOAN DELINQUENCY STATUS.
+		  	* Default Criteria: Loans with a delinquency status of 6+ months late or marked “RA” are classified as defaults; all others as non-defaults.
+			* True Default: Loans meeting default criteria at any point are labeled as “true_default” for accurate tracking.
+			* Sampling Proportion: 3,000 loans were sampled per year, including 350 defaults and 350 non-defaults per quarter to maintain balance.
+		* Limitations: Fewer defaults were found in some recent periods (e.g., only 264 defaults in Q4 2022, 32 in Q1 2023, and none in Q2 2023).
+		* Time Variables: Added OrigDate, OrigYear, and OrigQuarter to capture quarterly effects for modeling.
 
 #### Creating Stacked Datframe for Time-Series Analysis 
 - **Code2:** [StackDataset](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb) <br>
