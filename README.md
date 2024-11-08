@@ -1,13 +1,13 @@
 # Seulgi Ko - Business/Data Analysis Portfolio 
 
-## About me 
+# About me 
 Hello! I’m Seulgi Ko, an accounting and finance professional with experience as a consultant at accounting Big 4's. I have worked with clients from various industries, including large banks, cryto, electronics, and e-commerce, providing insights and solutions tailored to their unique needs. Leveraging this business knowledge alongside technical skills from my MS in Business Analytics at George Washington University, I am equipped to drive data-driven solutions in finance/accounting and analytics.
 
 On this dashboard, you can explore projects and coursework that showcase my expertise in analytical skills, including modeling and machine learning, along with technical proficiency in PySpark, SQL, and Python.
 
 ---
 
-## Table Content 
+# Table Content 
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
@@ -17,26 +17,26 @@ On this dashboard, you can explore projects and coursework that showcase my expe
 
 ---
 
-## Projects
+# Projects
 
-### Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction <a name="Default"></a>
+## Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction <a name="Default"></a>
 
 
-#### Overview
+### Overview
 The mortgage market plays a crucial role in financial markets. This project develops a predictive model for mortgage default over the next 24 months, focusing on interpretability, accuracy, and risk management. Key objectives include:
 - Enhancing stability of mortgage-backed securities.
 - Adapting to diverse economic conditions, including crisis scenarios like COVID-19.
 - Integrating static, dynamic, and macroeconomic variables for robust predictions.
 
 
-#### Data
+### Data
 
 - **Source**: Freddie Mac single-family home loans, from 2000 to Q2 2023.
 - **Content**: Origination and performance data, focusing on 30-year fixed-rate mortgages.
 - **Macroeconomic Variables**: Housing price index, inflation rate, and unemployment rate.
 
 
-#### Preprocessing and Sampling Techniques
+### Preprocessing and Sampling Techniques
 
 - **Code**: [Preprocessing Notebook](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb)
 
@@ -60,7 +60,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
    - **Additional Time Variables**: Added `OrigDate`, `OrigYear`, and `OrigQuarter` to track quarterly effects.
 
 
-#### Creating the Stacked Dataset for Time-Series Analysis
+### Creating the Stacked Dataset for Time-Series Analysis
 
 - **Code**: [StackDataset Notebook](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb)
 
@@ -79,7 +79,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
    - **SOURCE**: Differentiates original rows (“orig”) from generated rows for forecasting (“Duplicated”).
 
 
-#### Example of Stacked Data
+### Example of Stacked Data
 
 | Group | DEFAULT | Horizon | Source | LOAN SEQUENCE NUMBER | MONTHLY REPORTING PERIOD | CURRENT ACTUAL UPB | CURRENT LOAN DELINQUENCY STATUS | LOAN AGE | CURRENT INTEREST RATE |
 |-------|---------|---------|--------|-----------------------|---------------------------|---------------------|---------------------------------|----------|------------------------|
@@ -90,7 +90,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 | 2     | 0       | 1       | Dupli… | F00Q10000066         | 2000-03                   | 132000.0           | 0                               | 1        | 8.0                    |
 
 
-#### XGBoost Modeling in PiML
+### XGBoost Modeling in PiML
 
 - **Code**: [Modeling Notebook](https://github.com/seulgi2213/Profile/blob/main/Modeling%20with%20XGBoost%20in%20PiML.ipynb)
 
@@ -110,7 +110,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 | Gap     |-0.0323|-0.0415|-0.0656| 0.0530  | 0.0210|
 
 
-#### Visualizations
+### Visualizations
 
 - **Residual Box Plot of Predicted Default Variable (XGB2_v2 Model)**
   
@@ -121,7 +121,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
   <img src="https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522" alt="Predicted vs. Actual" width="700">
 
 
-### Machine Learning Projects 
+## Machine Learning Projects 
 <a name="ML"></a>
 
 #### Bikeshare 
