@@ -25,8 +25,8 @@ On this dashboard, you will be able to explore projects and coursework that show
 The significance of the mortgage market is immense, highlighting its pivotal role in financial markets. Key business outcomes for mortgage models include achieving interpretability and accuracy to foster trust and understanding among stakeholders, as well as providing default predictions over an extended period for effective risk management. Risk mitigation efforts aim to enhance the stability of mortgage-backed securities, particularly by addressing potential downward trends. Adaptability across diverse economic scenarios, including stress testing during crises like COVID-19, is vital for evaluating the model’s robustness. The objective of this project is to develop a predictive model for mortgage default over the next 24 months. The model will integrate various static, dynamic, and macroeconomic variables to enhance accuracy and robustness.
 
 #### The Data 
-* The dataset, sourced from Freddie Mac, spans from 2000 to Q2 2023 and includes origination and performance data for single-family home loans. Our focus is on 30-year fixed-rate mortgages for model trainining.
-* We also used macroeconomic data, including the inflation rate, unemployment rate, and housing price index.
+* Single-family home loans from Freddie Mac, spanning from 2000 to Q2 2023, consisting of origination and performance data, with a focus on 30-year fixed-rate mortgages.
+* Macroeconomic variables, including the housing price index, inflation rate, and unemployment rate.
 
 ### 
 * Description: 
