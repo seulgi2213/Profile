@@ -30,9 +30,9 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 - **Data Cleaning**
 	* The initial dataset had 64 variables and over 2.4 billion rows, processed with PySpark on GWU’s High Power Computing system.
 	* Key preprocessing steps:
-	* Handling Missing Data: Columns with over 95% null values were removed.
-	* Merging Datasets: The Performance and Origination datasets were merged using LOAN SEQUENCE NUMBER to provide a complete loan lifecycle view.
-	* Calculating ELTV: To fill missing Estimated Loan-to-Value (ELTV) ratios, ELTV was calculated as the ratio of the current unpaid balance to the adjusted housing price, factoring in House Price Index changes since loan origination.
+	  	* Handling Missing Data: Columns with over 95% null values were removed.
+   	  	* Merging Datasets: The Performance and Origination datasets were merged using LOAN SEQUENCE NUMBER to provide a complete loan lifecycle view.
+	  	* Calculating ELTV: To fill missing Estimated Loan-to-Value (ELTV) ratios, ELTV was calculated as the ratio of the current unpaid balance to the adjusted housing price, factoring in House Price Index changes since loan origination.
 
 * Variable Selection
 	•	Target Variable: Probability of default.
