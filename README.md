@@ -90,9 +90,6 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 ### Tableau 
 <a name="Tableau"></a>
 
-### Decision Model 
-<a name="DM"></a>
-
 ## Skills/License 
 <a name="Skill"></a>
 
