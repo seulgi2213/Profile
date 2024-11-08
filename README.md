@@ -70,6 +70,7 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 	  - **SOURCE**: Distinguishes between original rows (“orig”) and generated rows for forecasting (“Duplicated”).
     - 
 - **Example of Stacked Data**
+  
 | Group | DEFAULT | Horizon | Source | LOAN SEQUENCE NUMBER | MONTHLY REPORTING PERIOD | CURRENT ACTUAL UPB | CURRENT LOAN DELINQUENCY STATUS | LOAN AGE | CURRENT INTEREST RATE |
 |-------|---------|---------|--------|-----------------------|---------------------------|---------------------|---------------------------------|----------|-----------------------|
 | 0     | 0       | 0       | orig   | F00Q10000066          | 2000-02                   | 132000.0            | 0                               | 0        | 8.0                   |
@@ -96,6 +97,7 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 
 
 - **Accuracy Descriptions of XGB2_v2 Model**
+  
 |         |  ACC   |  AUC   |   F1   | LogLoss |  Brier |
 |---------|--------|--------|--------|---------|--------|
 |  Train  | 0.7003 | 0.7702 | 0.7070 |  0.5726 | 0.1950 |
