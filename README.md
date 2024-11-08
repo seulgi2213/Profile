@@ -1,7 +1,7 @@
 # Seulgi Ko - Business/Data Analysis Portfolio 
 
 ## About me 
-Hello! I’m Seulgi Ko, an accounting and finance professional with experience as a consultant at a Big 4 firm in Korea. I have worked with clients from various industries, including large banks, cryto, electronics, and e-commerce, providing insights and solutions tailored to their unique needs. Leveraging this business knowledge alongside technical skills from my MS in Business Analytics at George Washington University, I am equipped to drive data-driven solutions in finance/accounting and analytics.
+Hello! I’m Seulgi Ko, an accounting and finance professional with experience as a consultant at accounting Big 4's. I have worked with clients from various industries, including large banks, cryto, electronics, and e-commerce, providing insights and solutions tailored to their unique needs. Leveraging this business knowledge alongside technical skills from my MS in Business Analytics at George Washington University, I am equipped to drive data-driven solutions in finance/accounting and analytics.
 
 On this dashboard, you will be able to explore projects and coursework that showcase my expertise in machine learning, SQL, and Python.
 
