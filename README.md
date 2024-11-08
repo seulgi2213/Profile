@@ -28,28 +28,27 @@ The significance of the mortgage market is immense, highlighting its pivotal rol
 #### Preprocessing and Sampling Techniques 
 - **Code1:** [Preprocessing](https://github.com/seulgi2213/Profile/blob/main/Preprocessing_PySpark.ipynb) <br>
 - **Data Cleaning**
-	* The initial dataset had 64 variables and over 2.4 billion rows, processed with PySpark on GWU’s High Power Computing system.
-	* Key preprocessing steps:
-	  	* Handling Missing Data: Columns with over 95% null values were removed.
-   	  	* Merging Datasets: The Performance and Origination datasets were merged using LOAN SEQUENCE NUMBER to provide a complete loan lifecycle view.
-	  	* Calculating ELTV: To fill missing Estimated Loan-to-Value (ELTV) ratios, ELTV was calculated as the ratio of the current unpaid balance to the adjusted housing price, factoring in House Price Index changes since loan origination.
+  - The initial dataset had 64 variables and over 2.4 billion rows, processed with PySpark on GWU’s High Power Computing system.
+  - Key preprocessing steps:
+    - **Handling Missing Data**: Columns with over 95% null values were removed.
+    - **Merging Datasets**: The Performance and Origination datasets were merged using LOAN SEQUENCE NUMBER to provide a complete loan lifecycle view.
+    - **Calculating ELTV**: To fill missing Estimated Loan-to-Value (ELTV) ratios, ELTV was calculated as the ratio of the current unpaid balance to the adjusted housing price, factoring in House Price Index changes since loan origination.
 
-- **Variables Selection**
-  	* Target Variable: Probability of default.
-	* Input Variables:
-		* Static Variables: Origination Credit Score, Original Interest Rate, Property Type, Loan Purpose, etc.
-		* Dynamic Variables: Current Unpaid Balance, Loan Delinquency Status, Loan Age, Estimated Loan-to-Value.
-		* Macroeconomic Variables: Current Interest Rate, Unemployment Rate, Inflation Rate, House Price Index (nationally used for nulls at the state level).
-    
+- **Variable Selection**
+  - **Target Variable**: Probability of default.
+  - **Input Variables**:
+    - Static Variables: Origination Credit Score, Original Interest Rate, Property Type, Loan Purpose, etc.
+    - Dynamic Variables: Current Unpaid Balance, Loan Delinquency Status, Loan Age, Estimated Loan-to-Value.
+    - Macroeconomic Variables: Current Interest Rate, Unemployment Rate, Inflation Rate, House Price Index (nationally used for nulls at the state level).
+
 - **Sampling Techniques**
-	* Methodology
-		* Sampling Strategy: Given the dataset’s size, strategic sampling was used based on CURRENT LOAN DELINQUENCY STATUS.
-		  	* Default Criteria: Loans with a delinquency status of 6+ months late or marked “RA” are classified as defaults; all others as non-defaults.
-			* True Default: Loans meeting default criteria at any point are labeled as “true_default” for accurate tracking.
-			* Sampling Proportion: 3,000 loans were sampled per year, including 350 defaults and 350 non-defaults per quarter to maintain balance.
-		* Limitations: Fewer defaults were found in some recent periods (e.g., only 264 defaults in Q4 2022, 32 in Q1 2023, and none in Q2 2023).
-		* Time Variables: Added OrigDate, OrigYear, and OrigQuarter to capture quarterly effects for modeling.
-
+  - **Methodology**
+    - **Sampling Strategy**: Given the dataset’s size, strategic sampling was used based on CURRENT LOAN DELINQUENCY STATUS.
+      - **Default Criteria**: Loans with a delinquency status of 6+ months late or marked “RA” are classified as defaults; all others as non-defaults.
+      - **True Default**: Loans meeting default criteria at any point are labeled as “true_default” for accurate tracking.
+      - **Sampling Proportion**: 3,000 loans were sampled per year, including 350 defaults and 350 non-defaults per quarter to maintain balance.
+    - **Limitations**: Fewer defaults were found in some recent periods (e.g., only 264 defaults in Q4 2022, 32 in Q1 2023, and none in Q2 2023).
+    - **Time Variables**: Added OrigDate, OrigYear, and OrigQuarter to capture quarterly effects for modeling.
 #### Creating Stacked Datframe for Time-Series Analysis 
 - **Code2:** [StackDataset](https://github.com/seulgi2213/Profile/blob/main/Stacked%20Time%20Series%20Dataframe.ipynb) <br>
 
