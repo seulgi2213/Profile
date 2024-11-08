@@ -25,7 +25,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
 - Adapting to diverse economic conditions, including crisis scenarios like COVID-19.
 - Integrating static, dynamic, and macroeconomic variables for robust predictions.
 
----
 
 #### Data
 
@@ -33,7 +32,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
 - **Content**: Origination and performance data, focusing on 30-year fixed-rate mortgages.
 - **Macroeconomic Variables**: Housing price index, inflation rate, and unemployment rate.
 
----
 
 #### Preprocessing and Sampling Techniques
 
@@ -58,7 +56,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
    - **Limitations**: Fewer defaults in recent periods (e.g., 264 defaults in Q4 2022 and 32 in Q1 2023).
    - **Additional Time Variables**: Added `OrigDate`, `OrigYear`, and `OrigQuarter` to track quarterly effects.
 
----
 
 #### Creating the Stacked Dataset for Time-Series Analysis
 
@@ -78,7 +75,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
    - **HORIZON**: Tracks future periods for each duplicated row.
    - **SOURCE**: Differentiates original rows (“orig”) from generated rows for forecasting (“Duplicated”).
 
----
 
 #### Example of Stacked Data
 
@@ -90,7 +86,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
 | 2     | 0       | 0       | orig   | F00Q10000066         | 2000-04                   | 131000.0           | 0                               | 2        | 8.0                    |
 | 2     | 0       | 1       | Dupli… | F00Q10000066         | 2000-03                   | 132000.0           | 0                               | 1        | 8.0                    |
 
----
 
 #### XGBoost Modeling in PiML
 
@@ -111,7 +106,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
 | Test    | 0.6681| 0.7287| 0.6414| 0.6257  | 0.2160|
 | Gap     |-0.0323|-0.0415|-0.0656| 0.0530  | 0.0210|
 
----
 
 #### Visualizations
 
@@ -123,7 +117,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
   ![Predicted vs. Actual](https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522)
 
-
+--
 
 ### Machine Learning Projects 
 <a name="ML"></a>
