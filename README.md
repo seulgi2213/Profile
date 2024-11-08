@@ -11,7 +11,7 @@ On this dashboard, you can explore projects and coursework that showcase my expe
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
-   * [Machine Learning Projects](#ML)
+   * [Machine Learning Projects]
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
@@ -121,14 +121,11 @@ The mortgage market plays a crucial role in financial markets. This project deve
   <img src="https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522" alt="Predicted vs. Actual" width="700">
 
 
-## Machine Learning Projects 
-<a name="ML"></a>
-
-#### Bikeshare 
-####
-
 ### NY State Environment Conservation Project 
 <a name="SQL"></a>
+
+
+
 
 ---
 
