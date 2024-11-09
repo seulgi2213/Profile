@@ -124,6 +124,9 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 
 
+
+
+
 # Bikeshare Optimization <a name="ML1"></a>
 
 
@@ -220,6 +223,7 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
+
 ## Customer Churn Prediction 
 <a name="ML2"></a>
 
@@ -269,7 +273,8 @@ We evaluated the following models based on **precision**, **recall**, and **F1-s
   - **Random Forest**: Demonstrated the best performance for non-churn (F1-score 0.92) and the highest F1-score for churn (0.56).
   - **XGBoost**: Competitive with Random Forest, showing robust F1-scores for both non-churn (0.91) and churn (0.53).
 
-#### Revenue Prediction Assumptions
+
+### Revenue Prediction Assumptions
 To estimate the revenue impact of customer churn predictions, the following assumptions were applied:
   - **Investment Return**: A projected quarterly return of 15% on invested customer funds.
   - **Interest Rate on Savings**: A standard annual interest rate of 3% on customer balances.
@@ -329,19 +334,19 @@ The machine learning model increased total quarterly revenue by approximately **
 
 
 
-## Conclusion
+### Conclusion
 The XGBoost model proved effective in optimizing the bank’s customer retention strategy, leading to a **$1.98 million** revenue increase per quarter. This outcome emphasizes the importance of machine learning in identifying at-risk customers and implementing targeted retention incentives.
 
 
 
-## Recommendations
+### Recommendations
 - **Incentive Plans**: Offer tailored incentives, such as higher interest rates or fee waivers, for at-risk customers.
 - **Communication Strategy**: Use multi-channel outreach (mail, email, SMS) based on customer demographics for maximum engagement.
 - **Referral Program**: Encourage existing customers to refer friends, offering a bonus for new accounts meeting minimum balance requirements.
 
 
 
-## Skills Earned:
+### Skills Earned:
   - [x] 📊 **Data Analysis and Preprocessing**
   - [x] 🧠 **Statistical Modeling and Machine Learning**
   - [x] 💻 **Python Programming** (Pandas, NumPy, Scikit-learn)
