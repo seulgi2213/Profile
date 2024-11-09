@@ -12,8 +12,8 @@ On this dashboard, you can explore projects and coursework that showcase my expe
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
    * Machine Learning Projects <br>
-       [] <br>
-       [] 
+       [Bikeshare Optimization](#ML1) <br>
+       [Churn Rate Prediction](#ML2) <br> 
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
@@ -122,7 +122,25 @@ The mortgage market plays a crucial role in financial markets. This project deve
   <img src="https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522" alt="Predicted vs. Actual" width="700">
 
 
-### NY State Environment Conservation Project 
+## Bikeshare Optimization
+<a name="ML1"></a>
+
+### Purpouse
+The objective of this project is to enhance bikeshare operation efficiency by accurately predicting pickup and dropoff demand. Precise forecasting is crucial for optimal resource allocation, minimizing unmet demand, and maximizing profitability. This study investigates five regression models to identify the best approach for predicting pickups and dropoffs:
+  * Linear Regression
+  * Lasso Regression
+  * Ridge Regression
+  * K-Nearest Neighbors (KNN)
+  * Elastic Net Regression
+
+
+
+
+## Churn Rate Prediction 
+<a name="ML2"></a>
+
+
+## NY State Environment Conservation Project 
 <a name="SQL"></a>
 
 
