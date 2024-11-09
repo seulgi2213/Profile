@@ -331,19 +331,19 @@ ROC-AUC values further evaluated each model’s ability to distinguish churn fro
 
 ### Decision Performance Evaluation
 
-#### Revenue Projection
+**1. Revenue Projection**8
 
 - **Pre-Model Revenue**: The projected quarterly revenue was approximately **$11.43 million**.
 - **Post-Model Revenue**: After employing targeted retention strategies based on model predictions, the revenue increased to **$13.42 million**, demonstrating a **$1.98 million** gain.
 
-#### Revenue Breakdown
+**2. Revenue Breakdown**
 
 - **True Positives (Churn Predicted Correctly)**: Revenue generated from retaining at-risk customers through incentives.
 - **False Positives (Non-Churn Predicted as Churn)**: Represents additional costs for incentives that were not needed.
 - **Non-Churned Customers**: Successful retention led to consistent revenue.
 - **Churned Customers**: Revenue loss from customers who left, which could be mitigated with improved prediction accuracy.
 
-#### Total Revenue Impact
+**3. Total Revenue Impact**
 
 The machine learning model increased total quarterly revenue by approximately **$1.98 million**, highlighting the financial value of data-driven churn prediction and retention strategies.
 
