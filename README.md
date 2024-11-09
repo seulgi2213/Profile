@@ -12,8 +12,8 @@ On this dashboard, you can explore projects and coursework that showcase my expe
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
    * Machine Learning Projects <br>
-       [Bikeshare Optimization](#ML1) <br>
-       [Customer Churn Prediction ](#ML2) <br> 
+       *[Bikeshare Optimization](#ML1) <br>
+       *[Customer Churn Prediction ](#ML2) <br> 
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
@@ -135,7 +135,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 # Bikeshare Optimization 
 <a name="ML1"></a>
-
+**Code:** [Link](https://github.com/seulgi2213/Machine-Learning/blob/main/ML_Bikeshare.ipynb)
 
 
 ### Purpose
@@ -238,6 +238,7 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 ## Customer Churn Prediction 
 <a name="ML2"></a>
 
+**Code:**[Link](https://github.com/seulgi2213/Machine-Learning/blob/main/ML2_Customer%20Churn%20Rate.ipynb)
 
 
 ### Purpose
