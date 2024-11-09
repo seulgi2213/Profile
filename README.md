@@ -131,22 +131,23 @@ The objective of this project is to enhance bikeshare operation efficiency by ac
   * Lasso Regression
   * Ridge Regression
   * K-Nearest Neighbors (KNN)
-  * Elastic Net Regression
+  * Elastic Net Regression <br>
+
 Additionally, two operational strategies were considered:
-	1. Cost Strategy: Reducing costs associated with unsuccessful pickups and dropoffs due to demand misalignment.
-	2. Quality Strategy: Ensuring a high quality of service by aligning predictions with actual demand to reduce wait times and improve user satisfaction.
+	- **Cost Strategy**: Reducing costs associated with unsuccessful pickups and dropoffs due to demand misalignment.
+	- **Quality Strategy**: Ensuring a high quality of service by aligning predictions with actual demand to reduce wait times and improve user satisfaction.
 
 ### Model Development 
 
-**1. Exploratory Data Analysis(EDA)**
-	- **Data Integration**: Bikeshare usage data (pickup and dropoff counts) was combined with weather data, which provided insights into how weather conditions affect bikeshare demand.
-	- **Feature Selection**: A correlation matrix was used to analyze relationships between weather features and bikeshare demand, leading to the selection of five key features:
+**1. Exploratory Data Analysis(EDA)** <br>
+	- **Data Integration**: Bikeshare usage data (pickup and dropoff counts) was combined with weather data, which provided insights into how weather conditions affect bikeshare demand. <br>
+	- **Feature Selection**: A correlation matrix was used to analyze relationships between weather features and bikeshare demand, leading to the selection of five key features: <br>
     		* tempmax (maximum temperature)
     		* feelslikemax (perceived temperature)
     		* precipcover (precipitation coverage)
     		* humidity
     		* windspeed
-	- **Data Cleaning**: Irrelevant or redundant columns were removed to focus on impactful features, ensuring that the data was clean and suitable for model training.
+	- **Data Cleaning**: Irrelevant or redundant columns were removed to focus on impactful features, ensuring that the data was clean and suitable for model training. <br>
 
 **2. Predictive Modeling: Model Setup and Training**
   - Each model was trained to predict pickup and dropoff counts, using the selected weather features as inputs. Here’s an overview of each model:
