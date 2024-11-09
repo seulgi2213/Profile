@@ -122,6 +122,8 @@ The mortgage market plays a crucial role in financial markets. This project deve
   <img src="https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522" alt="Predicted vs. Actual" width="700">
 
 
+
+
 # Bikeshare Optimization <a name="ML1"></a>
 
 
@@ -214,9 +216,83 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
   - [x] 📐 **Regression and Model Evaluation Metrics**
 
 
+
+
 ## Churn Rate Prediction 
 <a name="ML2"></a>
 
+
+### Purpose
+The objective of this project is to improve customer retention for a bank by predicting customer churn using machine learning models. By proactively identifying at-risk customers, the bank can implement targeted retention strategies to minimize revenue loss and enhance profitability. This study investigates the effectiveness of four machine learning models:
+  - **Logistic Regression**
+  - **Decision Tree**
+  - **Random Forest**
+  - **XGBoost**
+
+Two primary outcomes were considered:
+  - **Revenue Impact**: Estimating the potential revenue loss from churn and the revenue gain from retention.
+  - **Retention Strategy**: Providing insights into key factors driving churn to support personalized retention efforts.
+    
+
+### Dataset Summary
+
+**Data Source**: The dataset, sourced from Kaggle, includes 10,000 observations and 12 features on customer data. The target variable, **Exited**, indicates if a customer left the bank.
+
+- **Key Variables**:
+    - **CreditScore**: Higher scores may correlate with lower churn risk.
+    - **Geography**: Customer location could impact retention.
+    - **Gender**: Gender might affect customer churn behavior.
+    - **Age**: Older customers tend to have higher retention rates.
+    - **Tenure**: Long-tenure customers are often more loyal.
+    - **Balance**: High balances correlate with lower churn risk.
+    - **NumOfProducts**: Number of bank products held by the customer.
+    - **HasCrCard**: Indicates if the customer has a credit card.
+    - **IsActiveMember**: Active customers are less likely to leave.
+    - **EstimatedSalary**: Lower salaries might indicate higher churn risk.
+
+
+## Data Preprocessing
+
+- **Data Cleaning**: The dataset contained no missing values, ensuring reliable data inputs.
+- **Feature Engineering**: Categorical variables (e.g., *Geography*, *Gender*) were converted to numerical values.
+- **Correlation Analysis**: A correlation heatmap highlighted *Age* and *Balance* as influential in predicting churn. Features with low correlation to churn, such as *CustomerId* and *Geography*, were excluded from modeling.
+
+---
+
+## Modeling
+
+We evaluated the following models based on **precision**, **recall**, and **F1-score** metrics to classify churn (Class 1) vs. non-churn (Class 0):
+
+  - **Logistic Regression**: Performed well in identifying non-churn cases (F1-score 0.90), but struggled with churn cases (F1-score 0.47).
+  - **Decision Tree**: Balanced results for non-churn (F1-score 0.86) but low performance for churn detection (F1-score 0.45).
+  - **Random Forest**: Demonstrated the best performance for non-churn (F1-score 0.92) and the highest F1-score for churn (0.56).
+  - **XGBoost**: Competitive with Random Forest, showing robust F1-scores for both non-churn (0.91) and churn (0.53).
+
+---
+
+## Model Performance
+
+| Model           | Class | Precision | Recall | F1-Score |
+|-----------------|-------|-----------|--------|----------|
+| Logistic        | 0     | 0.86      | 0.95   | 0.90     |
+|                 | 1     | 0.65      | 0.37   | 0.47     |
+| Decision Tree   | 0     | 0.86      | 0.86   | 0.86     |
+|                 | 1     | 0.45      | 0.45   | 0.45     |
+| Random Forest   | 0     | 0.88      | 0.96   | 0.92     |
+|                 | 1     | 0.73      | 0.45   | 0.56     |
+| XGBoost         | 0     | 0.87      | 0.95   | 0.91     |
+|                 | 1     | 0.67      | 0.44   | 0.53     |
+
+**Summary**: Random Forest and XGBoost emerged as the top models, with Random Forest slightly outperforming in terms of F1-scores, especially for non-churn cases.
+
+---
+
+## ROC-AUC Analysis
+
+ROC-AUC values further evaluated each model’s ability to distinguish churn from non-churn.
+
+| Model           | AUC (OVO) | AUC (OVR) |
+|
 
 ## NY State Environment Conservation Project 
 <a name="SQL"></a>
@@ -224,10 +300,6 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
----
-
-## Tableau 
-<a name="Tableau"></a>
 
 ---
 
