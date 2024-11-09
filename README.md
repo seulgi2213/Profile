@@ -254,18 +254,7 @@ Two primary outcomes were considered:
 
 **Data Source**: The dataset, sourced from Kaggle, includes 10,000 observations and 12 features on customer data. The target variable, **Exited**, indicates if a customer left the bank.
 
-- **Key Variables**:
-    - **CreditScore**: Higher scores may correlate with lower churn risk.
-    - **Geography**: Customer location could impact retention.
-    - **Gender**: Gender might affect customer churn behavior.
-    - **Age**: Older customers tend to have higher retention rates.
-    - **Tenure**: Long-tenure customers are often more loyal.
-    - **Balance**: High balances correlate with lower churn risk.
-    - **NumOfProducts**: Number of bank products held by the customer.
-    - **HasCrCard**: Indicates if the customer has a credit card.
-    - **IsActiveMember**: Active customers are less likely to leave.
-    - **EstimatedSalary**: Lower salaries might indicate higher churn risk.
-
+- **Key Variables**: CreditScore, Geography, Gender, Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary
 
 
 ### Data Preprocessing
