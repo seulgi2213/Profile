@@ -122,65 +122,93 @@ The mortgage market plays a crucial role in financial markets. This project deve
   <img src="https://github.com/celinawong21/WF-ML-Model/assets/158225115/c6e6ba99-25e1-4794-bb0f-2e6d6496f522" alt="Predicted vs. Actual" width="700">
 
 
-## Bikeshare Optimization
-<a name="ML1"></a>
+# Bikeshare Optimization <a name="ML1"></a>
 
-### Purpouse
+---
+
+### Purpose
 The objective of this project is to enhance bikeshare operation efficiency by accurately predicting pickup and dropoff demand. Precise forecasting is crucial for optimal resource allocation, minimizing unmet demand, and maximizing profitability. This study investigates five regression models to identify the best approach for predicting pickups and dropoffs:
-  * Linear Regression
-  * Lasso Regression
-  * Ridge Regression
-  * K-Nearest Neighbors (KNN)
-  * Elastic Net Regression <br>
+  - **Linear Regression**
+  - **Lasso Regression**
+  - **Ridge Regression**
+  - **K-Nearest Neighbors (KNN)**
+  - **Elastic Net Regression**
 
 Additionally, two operational strategies were considered:
-	- **Cost Strategy**: Reducing costs associated with unsuccessful pickups and dropoffs due to demand misalignment.
-	- **Quality Strategy**: Ensuring a high quality of service by aligning predictions with actual demand to reduce wait times and improve user satisfaction.
+  - **Cost Strategy**: Reducing costs associated with unsuccessful pickups and dropoffs due to demand misalignment.
+  - **Quality Strategy**: Ensuring a high quality of service by aligning predictions with actual demand to reduce wait times and improve user satisfaction.
 
-### Model Development 
+---
 
-**1. Exploratory Data Analysis(EDA)** <br>
+### Model Development
 
-	* **Data Integration**: Bikeshare usage data (pickup and dropoff counts) was combined with weather data, which provided insights into how weather conditions affect bikeshare demand. <br>
- 
-	* **Feature Selection**: A correlation matrix was used to analyze relationships between weather features and bikeshare demand, leading to the selection of five key features: <br>
-    		* tempmax (maximum temperature) <br>
-    		* feelslikemax (perceived temperature) <br>
-    		* precipcover (precipitation coverage) <br>
-    		* humidity <br>
-    		* windspeed <br>
-      
-	* **Data Cleaning**: Irrelevant or redundant columns were removed to focus on impactful features, ensuring that the data was clean and suitable for model training. <br>
+#### 1. Exploratory Data Analysis (EDA)
 
-**2. Predictive Modeling: Model Setup and Training**
+- **Data Integration**:  
+  Bikeshare usage data (pickup and dropoff counts) was combined with weather data, providing insights into how weather conditions affect bikeshare demand.
 
-Each model was trained to predict pickup and dropoff counts, using the selected weather features as inputs. Here’s an overview of each model:
+- **Feature Selection**:  
+  A correlation matrix was used to analyze relationships between weather features and bikeshare demand, leading to the selection of five key features:
+  - `tempmax` (maximum temperature)
+  - `feelslikemax` (perceived temperature)
+  - `precipcover` (precipitation coverage)
+  - `humidity`
+  - `windspeed`
 
-	* **Linear Regression**: A straightforward linear approach for predicting demand based on feature relationships.
-	* **Lasso Regression**: Linear model with L1 regularization, which shrinks less important features toward zero, effectively performing feature selection.
-	* **Ridge Regression**: Linear model with L2 regularization, controlling for multicollinearity by reducing the impact of correlated features.
-	* **Elastic Net Regression**: A combination of L1 and L2 regularization (Lasso and Ridge), effective when handling sparse data with correlated features.
-	* **K-Nearest Neighbors (KNN)**: A non-parametric model that predicts pickups/dropoffs based on similar past data points, suitable for capturing non-linear patterns.
+- **Data Cleaning**:  
+  Irrelevant or redundant columns were removed to focus on impactful features, ensuring that the data was clean and suitable for model training.
 
-**Evaluation Metrics**: Each model’s performance was evaluated based on: <br>
-	* **R-Squared (R²)**: Measures the proportion of variance in demand that each model explains, with higher values indicating better fit. <br>
-	* **Mean Squared Error (MSE)**: Measures average squared differences between predicted and actual values, where lower values reflect more accurate predictions.
+#### 2. Predictive Modeling: Model Setup and Training
 
-**3. Result**
+Each model was trained to predict pickup and dropoff counts using the selected weather features as inputs. Below is an overview of each model used:
+
+- **Linear Regression**:  
+  A straightforward linear approach for predicting demand based on feature relationships.
+
+- **Lasso Regression**:  
+  Linear model with L1 regularization, which shrinks less important features toward zero, effectively performing feature selection.
+
+- **Ridge Regression**:  
+  Linear model with L2 regularization, controlling for multicollinearity by reducing the impact of correlated features.
+
+- **Elastic Net Regression**:  
+  A combination of L1 and L2 regularization (Lasso and Ridge), effective when handling sparse data with correlated features.
+
+- **K-Nearest Neighbors (KNN)**:  
+  A non-parametric model that predicts pickups/dropoffs based on similar past data points, suitable for capturing non-linear patterns.
+
+#### Evaluation Metrics
+Each model’s performance was evaluated based on:
+
+- **R-Squared (R²)**: Measures the proportion of variance in demand that each model explains, with higher values indicating better fit.
+- **Mean Squared Error (MSE)**: Measures average squared differences between predicted and actual values, where lower values reflect more accurate predictions.
+
+---
+
+### Results
+
 The results focused on prediction accuracy (R² and MSE) and operational metrics (cost and quality of service) for each model:
 
-	* Prediction Accuracy Results:
-  		* Pickup Accuracy: Linear Regression had the highest R-squared value of 0.34, making it the most effective model for predicting pickups. With an MSE of 83.054, it demonstrated a good balance between explaining variability in pickups and minimizing prediction error.
-		* Dropoff Accuracy: Lasso Regression outperformed other models, achieving the highest R-squared value of 0.344 for dropoffs. Its lower MSE of 74.86 further indicated that it was the best model for accurately predicting dropoffs.
+- **Prediction Accuracy Results**:
+  - **Pickup Accuracy**:  
+    Linear Regression had the highest R-squared value of 0.34, making it the most effective model for predicting pickups. With an MSE of 83.054, it demonstrated a good balance between explaining variability in pickups and minimizing prediction error.
 
-This analysis led to the recommendation of Linear Regression for pickup accuracy and Lasso Regression for dropoff accuracy.
+  - **Dropoff Accuracy**:  
+    Lasso Regression outperformed other models, achieving the highest R-squared value of 0.344 for dropoffs. Its lower MSE of 74.86 further indicated that it was the best model for accurately predicting dropoffs.
 
-	* Cost Strategy: The cost strategy aimed to minimize financial impacts from unmet pickup and dropoff demand. Each failed pickup was assigned a cost of $2, and each failed dropoff a cost of $3. By comparing predicted and actual values, the models’ costs of unmet demand were calculated.
-  		* Results: **Linear Regression** showed the lowest average total cost for unsuccessful predictions, making it the optimal model for minimizing operational costs.
+This analysis led to the recommendation of **Linear Regression for pickup accuracy** and **Lasso Regression for dropoff accuracy**.
 
-	* Quality Strategy: Quality of Service (QoS) was measured based on the alignment between model predictions and actual demand, focusing on reducing unmet demand and providing reliable service.
-		  * Results: **Linear Regression** achieved the highest average QoS score, indicating superior performance in meeting demand accurately and consistently.
+- **Cost Strategy**:  
+  The cost strategy aimed to minimize financial impacts from unmet pickup and dropoff demand. Each failed pickup was assigned a cost of $2, and each failed dropoff a cost of $3. By comparing predicted and actual values, the models’ costs of unmet demand were calculated.
+  - **Results**:  
+    Linear Regression showed the lowest average total cost for unsuccessful predictions, making it the optimal model for minimizing operational costs.
 
+- **Quality Strategy**:  
+  Quality of Service (QoS) was measured based on the alignment between model predictions and actual demand, focusing on reducing unmet demand and providing reliable service.
+  - **Results**:  
+    Linear Regression achieved the highest average QoS score, indicating superior performance in meeting demand accurately and consistently.
+
+---
 
 
 ## Churn Rate Prediction 
