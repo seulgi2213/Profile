@@ -383,7 +383,6 @@ The XGBoost model proved effective in optimizing the bank’s customer retention
 
 * Programming Languages & Tools: Python(Pandas, NumPy, MatPlotLib, Scikit-learn), SQL, PySpark, AWS
 * Statistical Analysis & Data Processing: R, MS Excel (Solver, Pivot Table, VLOOKUP)
-* PUT Decison Model I learned 
 * License: CPA, Washington (License No: 40792) — Expiration Date: 06/30/2026
 
 ---
