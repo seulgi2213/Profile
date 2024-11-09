@@ -142,11 +142,11 @@ Additionally, two operational strategies were considered:
 **1. Exploratory Data Analysis(EDA)** <br>
 	- **Data Integration**: Bikeshare usage data (pickup and dropoff counts) was combined with weather data, which provided insights into how weather conditions affect bikeshare demand. <br>
 	- **Feature Selection**: A correlation matrix was used to analyze relationships between weather features and bikeshare demand, leading to the selection of five key features: <br>
-    		* tempmax (maximum temperature)
-    		* feelslikemax (perceived temperature)
-    		* precipcover (precipitation coverage)
-    		* humidity
-    		* windspeed
+    		* tempmax (maximum temperature) <br>
+    		* feelslikemax (perceived temperature) <br>
+    		* precipcover (precipitation coverage) <br>
+    		* humidity <br>
+    		* windspeed <br>
 	- **Data Cleaning**: Irrelevant or redundant columns were removed to focus on impactful features, ensuring that the data was clean and suitable for model training. <br>
 
 **2. Predictive Modeling: Model Setup and Training**
