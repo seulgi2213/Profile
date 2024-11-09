@@ -21,7 +21,8 @@ On this dashboard, you can explore projects and coursework that showcase my expe
 
 # Projects
 
-## Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction <a name="Default"></a>
+## Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction 
+<a name="Default"></a>
 
 
 ### Overview
@@ -132,7 +133,8 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 
 
-# Bikeshare Optimization <a name="ML1"></a>
+# Bikeshare Optimization 
+<a name="ML1"></a>
 
 
 
@@ -233,7 +235,8 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
-## Customer Churn Prediction <a name="ML2"></a>
+## Customer Churn Prediction 
+<a name="ML2"></a>
 
 
 
