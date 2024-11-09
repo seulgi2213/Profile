@@ -11,7 +11,7 @@ On this dashboard, you can explore projects and coursework that showcase my expe
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
    * [NY State Environment Conservation Project](#SQL)
-   * Machine Learning Projects
+   * Machine Learning Projects <br>
        []
        [] 
 * [Skills/License](#Skill)
