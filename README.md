@@ -224,8 +224,7 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
-## Customer Churn Prediction 
-<a name="ML2"></a>
+## Customer Churn Prediction <a name="ML2"></a>
 
 
 ### Purpose
