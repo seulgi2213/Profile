@@ -345,7 +345,7 @@ ROC-AUC values further evaluated each model’s ability to distinguish churn fro
 
 - **Total Revenue Impact**
 
-The machine learning model increased total quarterly revenue by approximately **$1.98 million**, highlighting the financial value of data-driven churn prediction and retention strategies.
+  The machine learning model increased total quarterly revenue by approximately **$1.98 million**, highlighting the financial value of data-driven churn   prediction and retention strategies.
 
 
 
