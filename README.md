@@ -135,7 +135,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 # Bikeshare Optimization 
 <a name="ML1"></a>
-**Code:** [Link](https://github.com/seulgi2213/Machine-Learning/blob/main/ML_Bikeshare.ipynb)
+**Code:** [Jupyter](https://github.com/seulgi2213/Machine-Learning/blob/main/ML_Bikeshare.ipynb)
 
 
 ### Purpose
@@ -238,7 +238,7 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 ## Customer Churn Prediction 
 <a name="ML2"></a>
 
-**Code:**[Link](https://github.com/seulgi2213/Machine-Learning/blob/main/ML2_Customer%20Churn%20Rate.ipynb)
+**Code:** [Jupyter](https://github.com/seulgi2213/Machine-Learning/blob/main/ML2_Customer%20Churn%20Rate.ipynb)
 
 
 ### Purpose
