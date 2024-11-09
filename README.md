@@ -124,7 +124,6 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 # Bikeshare Optimization <a name="ML1"></a>
 
----
 
 ### Purpose
 The objective of this project is to enhance bikeshare operation efficiency by accurately predicting pickup and dropoff demand. Precise forecasting is crucial for optimal resource allocation, minimizing unmet demand, and maximizing profitability. This study investigates five regression models to identify the best approach for predicting pickups and dropoffs:
@@ -138,7 +137,6 @@ Additionally, two operational strategies were considered:
   - **Cost Strategy**: Reducing costs associated with unsuccessful pickups and dropoffs due to demand misalignment.
   - **Quality Strategy**: Ensuring a high quality of service by aligning predictions with actual demand to reduce wait times and improve user satisfaction.
 
----
 
 ### Model Development
 
@@ -183,7 +181,6 @@ Each model’s performance was evaluated based on:
 - **R-Squared (R²)**: Measures the proportion of variance in demand that each model explains, with higher values indicating better fit.
 - **Mean Squared Error (MSE)**: Measures average squared differences between predicted and actual values, where lower values reflect more accurate predictions.
 
----
 
 ### Results
 
@@ -191,10 +188,10 @@ The results focused on prediction accuracy (R² and MSE) and operational metrics
 
 - **Prediction Accuracy Results**:
   - **Pickup Accuracy**:  
-    Linear Regression had the highest R-squared value of 0.34, making it the most effective model for predicting pickups. With an MSE of 83.054, it demonstrated a good balance between explaining variability in pickups and minimizing prediction error.
+    Linear Regression had the highest R-squared value of **0.34**, making it the most effective model for predicting pickups. With an MSE of **83.054**, it demonstrated a good balance between explaining variability in pickups and minimizing prediction error.
 
   - **Dropoff Accuracy**:  
-    Lasso Regression outperformed other models, achieving the highest R-squared value of 0.344 for dropoffs. Its lower MSE of 74.86 further indicated that it was the best model for accurately predicting dropoffs.
+    Lasso Regression outperformed other models, achieving the highest R-squared value of **0.344** for dropoffs. Its lower MSE of **74.86** further indicated that it was the best model for accurately predicting dropoffs.
 
 This analysis led to the recommendation of **Linear Regression for pickup accuracy** and **Lasso Regression for dropoff accuracy**.
 
@@ -208,7 +205,6 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
   - **Results**:  
     Linear Regression achieved the highest average QoS score, indicating superior performance in meeting demand accurately and consistently.
 
----
 
 
 ## Churn Rate Prediction 
