@@ -205,13 +205,13 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
   - **Results**:  
     Linear Regression achieved the highest average QoS score, indicating superior performance in meeting demand accurately and consistently.
 
-### Skills Earned:
-  - Data Analysis and Preprocessing
-  - Statistical Modeling and Machine Learning
-  - Python Programming (Pandas, NumPy, Scikit-learn)
-  - Data Visualization (Matplotlib, Seaborn)
-  - Regression and Model Evaluation Metrics
 
+### Skills Earned:
+  - [x] 📊 **Data Analysis and Preprocessing**
+  - [x] 🧠 **Statistical Modeling and Machine Learning**
+  - [x] 💻 **Python Programming** (Pandas, NumPy, Scikit-learn)
+  - [x] 📈 **Data Visualization** (Matplotlib, Seaborn)
+  - [x] 📐 **Regression and Model Evaluation Metrics**
 
 
 ## Churn Rate Prediction 
