@@ -254,7 +254,12 @@ Two primary outcomes were considered:
 
 **Data Source**: The dataset, sourced from Kaggle, includes 10,000 observations and 12 features on customer data. The target variable, **Exited**, indicates if a customer left the bank.
 
-- **Key Variables**: 'CreditScore, Geography, Gender, Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary'
+<pre>
+```plaintext
+Key Variables: CreditScore, Geography, Gender, Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary
+```
+</pre>
+
 
 
 ### Data Preprocessing
