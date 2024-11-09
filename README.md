@@ -13,7 +13,7 @@ On this dashboard, you can explore projects and coursework that showcase my expe
    * [NY State Environment Conservation Project](#SQL)
    * Machine Learning Projects <br>
        [Bikeshare Optimization](#ML1) <br>
-       [Churn Rate Prediction](#ML2) <br> 
+       [Customer Churn Prediction ](#ML2) <br> 
 * [Skills/License](#Skill)
 * [Contacts](#Contact)
 
@@ -218,7 +218,9 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
-## Churn Rate Prediction 
+
+
+## Customer Churn Prediction 
 <a name="ML2"></a>
 
 
@@ -251,15 +253,14 @@ Two primary outcomes were considered:
     - **EstimatedSalary**: Lower salaries might indicate higher churn risk.
 
 
-## Data Preprocessing
+### Data Preprocessing
 
 - **Data Cleaning**: The dataset contained no missing values, ensuring reliable data inputs.
 - **Feature Engineering**: Categorical variables (e.g., *Geography*, *Gender*) were converted to numerical values.
 - **Correlation Analysis**: A correlation heatmap highlighted *Age* and *Balance* as influential in predicting churn. Features with low correlation to churn, such as *CustomerId* and *Geography*, were excluded from modeling.
 
----
 
-## Modeling
+### Modeling
 
 We evaluated the following models based on **precision**, **recall**, and **F1-score** metrics to classify churn (Class 1) vs. non-churn (Class 0):
 
@@ -268,9 +269,16 @@ We evaluated the following models based on **precision**, **recall**, and **F1-s
   - **Random Forest**: Demonstrated the best performance for non-churn (F1-score 0.92) and the highest F1-score for churn (0.56).
   - **XGBoost**: Competitive with Random Forest, showing robust F1-scores for both non-churn (0.91) and churn (0.53).
 
----
+#### Revenue Prediction Assumptions
+To estimate the revenue impact of customer churn predictions, the following assumptions were applied:
+  - **Investment Return**: A projected quarterly return of 15% on invested customer funds.
+  - **Interest Rate on Savings**: A standard annual interest rate of 3% on customer balances.
+  - **Retention Incentive**: For customers predicted to churn, the interest rate is increased to 5% to encourage retention.
 
-## Model Performance
+These assumptions reflect typical banking practices and provide a basis for comparing revenue before and after implementing the predictive model.
+
+
+### Model Performance
 
 | Model           | Class | Precision | Recall | F1-Score |
 |-----------------|-------|-----------|--------|----------|
@@ -283,16 +291,66 @@ We evaluated the following models based on **precision**, **recall**, and **F1-s
 | XGBoost         | 0     | 0.87      | 0.95   | 0.91     |
 |                 | 1     | 0.67      | 0.44   | 0.53     |
 
-**Summary**: Random Forest and XGBoost emerged as the top models, with Random Forest slightly outperforming in terms of F1-scores, especially for non-churn cases.
+**Summary**: **Random Forest** and **XGBoost** emerged as the top models, with Random Forest slightly outperforming in terms of F1-scores, especially for non-churn cases.
 
----
 
-## ROC-AUC Analysis
+### ROC-AUC Analysis
 
 ROC-AUC values further evaluated each model’s ability to distinguish churn from non-churn.
 
 | Model           | AUC (OVO) | AUC (OVR) |
-|
+|-----------------|-----------|-----------|
+| Logistic        | 0.8253    | 0.8253    |
+| Decision Tree   | 0.6625    | 0.6625    |
+| Random Forest   | 0.8468    | 0.8468    |
+| XGBoost         | 0.8364    | 0.8364    |
+
+**Conclusion**: **Random Forest** and **XGBoost** consistently demonstrated high AUC values, making them the most reliable models for churn prediction.
+
+
+
+### Decision Performance Evaluation
+
+#### Revenue Projection
+
+- **Pre-Model Revenue**: The projected quarterly revenue was approximately **$11.43 million**.
+- **Post-Model Revenue**: After employing targeted retention strategies based on model predictions, the revenue increased to **$13.42 million**, demonstrating a **$1.98 million** gain.
+
+#### Revenue Breakdown
+
+- **True Positives (Churn Predicted Correctly)**: Revenue generated from retaining at-risk customers through incentives.
+- **False Positives (Non-Churn Predicted as Churn)**: Represents additional costs for incentives that were not needed.
+- **Non-Churned Customers**: Successful retention led to consistent revenue.
+- **Churned Customers**: Revenue loss from customers who left, which could be mitigated with improved prediction accuracy.
+
+#### Total Revenue Impact
+
+The machine learning model increased total quarterly revenue by approximately **$1.98 million**, highlighting the financial value of data-driven churn prediction and retention strategies.
+
+
+
+## Conclusion
+The XGBoost model proved effective in optimizing the bank’s customer retention strategy, leading to a **$1.98 million** revenue increase per quarter. This outcome emphasizes the importance of machine learning in identifying at-risk customers and implementing targeted retention incentives.
+
+
+
+## Recommendations
+- **Incentive Plans**: Offer tailored incentives, such as higher interest rates or fee waivers, for at-risk customers.
+- **Communication Strategy**: Use multi-channel outreach (mail, email, SMS) based on customer demographics for maximum engagement.
+- **Referral Program**: Encourage existing customers to refer friends, offering a bonus for new accounts meeting minimum balance requirements.
+
+
+
+## Skills Earned:
+  - [x] 📊 **Data Analysis and Preprocessing**
+  - [x] 🧠 **Statistical Modeling and Machine Learning**
+  - [x] 💻 **Python Programming** (Pandas, NumPy, Scikit-learn)
+  - [x] 📈 **Data Visualization** (Matplotlib, Seaborn)
+  - [x] 📐 **Classification Metrics and Model Evaluation**
+
+
+
+
 
 ## NY State Environment Conservation Project 
 <a name="SQL"></a>
