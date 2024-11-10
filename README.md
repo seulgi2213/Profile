@@ -133,6 +133,100 @@ The mortgage market plays a crucial role in financial markets. This project deve
 
 
 
+## NY State Environment Conservation Project 
+ <a name="SQL"></a>
+
+**Code:** [Jupyter]()
+
+### Purpose 
+Environmental change is a critical issue with far-reaching impacts. New York State, through its Climate Act, aims to reduce economy-wide greenhouse gas emissions by 40% by 2030 and by at least 85% by 2050 from 1990 levels. By analyzing spill incident data across the state, this project seeks to identify types of spill incidents, their causes, and environmental impacts. The findings will inform strategic and tailored remediation programs to enhance regulations, ultimately benefiting the environment and public health in New York State.
+
+
+### Data Limitations & Actions taken 
+-**Limitations**: The dataset contains significant missing values, especially in the Zip Code column, and inconsistencies in older records before 1997. Additional gaps include null values in location and date fields, and some entries are labeled as test records.
+-**Actions Taken**: We removed unnecessary fields (like Zip Code), filtered out data prior to 1997, addressed null values for analysis consistency, and excluded test records and entries with uncertain dates to improve data reliability for our analysis.
+
+
+### Creating Our Star Schema
+
+To analyze environmental spill incidents in New York, we designed a **star schema** for efficient querying and reporting. 
+
+- **Making the Fact Table**
+
+  - The fact table, **Spills_Fact**, was created first to store the core metrics about each spill incident, providing the foundation for analysis.
+  - **Columns**:
+    - Foreign keys that would later link to `Date_Dim`, `Location_Dim`, `Cause_Dim`, and `Material_Dim`.
+    - Metrics like `IncidentID`, `QuantitySpilled`, and `QuantityRecovered`.
+  - **Data Loading**:
+    - The fact table was populated with data extracted from the raw dataset, using temporary keys to represent dimension information until the actual dimension tables were created.
+
+| Table            | Purpose                                              | Key Columns                                             |
+|------------------|------------------------------------------------------|---------------------------------------------------------|
+| **Spills_Fact**  | Central fact table with metrics on spill incidents   | IncidentID, MaterialID, CauseID, LocationID, DateID, QuantitySpilled, QuantityRecovered |
+
+
+### Creating and Loading the Dimension Tables
+
+Once the fact table was established, we created the dimension tables to add context to each fact record. Each dimension table was populated with unique data relevant to spill incidents:
+
+1. **Extracting Unique Values**:  
+   - SQL queries were used to identify unique values for each dimension from the raw dataset.
+2. **Cleaning and Transforming**:  
+   - Data formats were standardized, and unnecessary fields were removed to ensure consistency.
+3. **Loading Data**:  
+   - Cleaned data was loaded into each dimension table using SQL `INSERT INTO` statements, with dimension keys linking to the fact table.
+
+| Table            | Purpose                                           | Key Columns                |
+|------------------|---------------------------------------------------|----------------------------|
+| **Date_Dim**     | Provides date-related details                     | DateID, Year, Quarter, Month |
+| **Location_Dim** | Stores location information                       | LocationID, County, Locality, DEC Code |
+| **Cause_Dim**    | Lists causes of spill incidents                   | CauseID, CauseType, CauseCategory |
+| **Material_Dim** | Details on materials involved in spill incidents  | MaterialID, MaterialType |
+
+Each table adds critical context, allowing detailed analysis of each spill’s location, cause, date, and materials involved.
+
+
+### Join Functions and Code Development
+
+We used various SQL `JOIN` functions to retrieve specific results from our star schema, combining data from the fact and dimension tables to answer our business questions.
+
+1. **Join Functions**:
+   - **INNER JOIN**: Ensures only matching records from fact and dimension tables are included, which is useful for precise analysis.
+   - **LEFT JOIN**: Used when needing to include all records from the fact table, even if some dimension values are missing.
+
+2. **Sample Query for Total Spills by Material Type**:
+   ```sql
+   SELECT m.MaterialType, COUNT(f.IncidentID) AS TotalSpills
+   FROM Spills_Fact f
+   INNER JOIN Material_Dim m ON f.MaterialID = m.MaterialID
+   GROUP BY m.MaterialType;
+
+3. **Code Development:**
+   - **Data Cleaning and Transformation**: Ensured data quality through SQL before loading into the star schema.
+	 - **Calculating Incident Metrics**: Used SQL functions like **COUNT**, **SUM**, and **AVG** to generate metrics for spill incidents.
+	 - **Testing and Optimization**: Queried data from the star schema to verify accuracy, optimizing joins and indexing for efficient querying.
+
+
+### Problems and Strategic Solutions
+
+1. Which types of materials are most frequently spilled, and what are the common causes?
+   - **Result**: Key spills of concern include #6 fuel oil in Gardner Creek Oswego (16 million gallons), gasoline in Long Island Sound (12 million gallons), and diesel in Buffalo River (4 million gallons). Additional spills occur in Stony Creek and Hudson River, but in smaller quantities.
+   - **Actionable Insight**: NY State Remediation should prioritize containment strategies and policies focused on these high-risk materials and locations to effectively reduce environmental impact.
+
+2. Are there particular locations or sources with higher spill rates?
+   - **Result**: The main spill sources are commercial/industrial sites, major facilities, government institutions, airports, and private dwellings. Equipment failure is the top cause in most cases, with additional incidents from storms and vandalism, particularly at major facilities.
+   - **Actionable Insight**: To reduce spills, NY State should focus on stricter maintenance requirements, training certifications, and end-of-life regulations for equipment. Additional actions, like weather-proofing laws, improved security for major facilities, and public education for residential areas, could further mitigate risks.
+
+3. What are the environmental and financial impacts of different spill incidents?
+   - **Result**: Larger spills correlate strongly with higher cleanup costs and greater environmental damage, highlighting the significant impact of large-scale incidents.
+   - **Actionable Insight**: Preventive measures should be a priority for large-scale spills to reduce the frequency of major incidents, helping to lower remediation costs and limit environmental harm.
+
+
+
+
+
+
+
 # Bikeshare Optimization 
 <a name="ML1"></a>
 **Code:** [Jupyter](https://github.com/seulgi2213/Machine-Learning/blob/main/ML_Bikeshare.ipynb)
@@ -232,95 +326,6 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
-
-
-## NY State Environment Conservation Project 
- <a name="SQL"></a>
-
-**Code:** [Jupyter]()
-
-### Purpose 
-Environmental change is a critical issue with far-reaching impacts. New York State, through its Climate Act, aims to reduce economy-wide greenhouse gas emissions by 40% by 2030 and by at least 85% by 2050 from 1990 levels. By analyzing spill incident data across the state, this project seeks to identify types of spill incidents, their causes, and environmental impacts. The findings will inform strategic and tailored remediation programs to enhance regulations, ultimately benefiting the environment and public health in New York State.
-
-
-### Data Limitations & Actions taken 
--**Limitations**: The dataset contains significant missing values, especially in the Zip Code column, and inconsistencies in older records before 1997. Additional gaps include null values in location and date fields, and some entries are labeled as test records.
--**Actions Taken**: We removed unnecessary fields (like Zip Code), filtered out data prior to 1997, addressed null values for analysis consistency, and excluded test records and entries with uncertain dates to improve data reliability for our analysis.
-
-
-### Creating Our Star Schema
-
-To analyze environmental spill incidents in New York, we designed a **star schema** for efficient querying and reporting. 
-
-- **Making the Fact Table**
-
-  - The fact table, **Spills_Fact**, was created first to store the core metrics about each spill incident, providing the foundation for analysis.
-  - **Columns**:
-    - Foreign keys that would later link to `Date_Dim`, `Location_Dim`, `Cause_Dim`, and `Material_Dim`.
-    - Metrics like `IncidentID`, `QuantitySpilled`, and `QuantityRecovered`.
-  - **Data Loading**:
-    - The fact table was populated with data extracted from the raw dataset, using temporary keys to represent dimension information until the actual dimension tables were created.
-
-| Table            | Purpose                                              | Key Columns                                             |
-|------------------|------------------------------------------------------|---------------------------------------------------------|
-| **Spills_Fact**  | Central fact table with metrics on spill incidents   | IncidentID, MaterialID, CauseID, LocationID, DateID, QuantitySpilled, QuantityRecovered |
-
-
-### Creating and Loading the Dimension Tables
-
-Once the fact table was established, we created the dimension tables to add context to each fact record. Each dimension table was populated with unique data relevant to spill incidents:
-
-1. **Extracting Unique Values**:  
-   - SQL queries were used to identify unique values for each dimension from the raw dataset.
-2. **Cleaning and Transforming**:  
-   - Data formats were standardized, and unnecessary fields were removed to ensure consistency.
-3. **Loading Data**:  
-   - Cleaned data was loaded into each dimension table using SQL `INSERT INTO` statements, with dimension keys linking to the fact table.
-
-| Table            | Purpose                                           | Key Columns                |
-|------------------|---------------------------------------------------|----------------------------|
-| **Date_Dim**     | Provides date-related details                     | DateID, Year, Quarter, Month |
-| **Location_Dim** | Stores location information                       | LocationID, County, Locality, DEC Code |
-| **Cause_Dim**    | Lists causes of spill incidents                   | CauseID, CauseType, CauseCategory |
-| **Material_Dim** | Details on materials involved in spill incidents  | MaterialID, MaterialType |
-
-Each table adds critical context, allowing detailed analysis of each spill’s location, cause, date, and materials involved.
-
-
-### Join Functions and Code Development
-
-We used various SQL `JOIN` functions to retrieve specific results from our star schema, combining data from the fact and dimension tables to answer our business questions.
-
-1. **Join Functions**:
-   - **INNER JOIN**: Ensures only matching records from fact and dimension tables are included, which is useful for precise analysis.
-   - **LEFT JOIN**: Used when needing to include all records from the fact table, even if some dimension values are missing.
-
-2. **Sample Query for Total Spills by Material Type**:
-   ```sql
-   SELECT m.MaterialType, COUNT(f.IncidentID) AS TotalSpills
-   FROM Spills_Fact f
-   INNER JOIN Material_Dim m ON f.MaterialID = m.MaterialID
-   GROUP BY m.MaterialType;
-
-3. **Code Development:**
-   - **Data Cleaning and Transformation**: Ensured data quality through SQL before loading into the star schema.
-	 - **Calculating Incident Metrics**: Used SQL functions like **COUNT**, **SUM**, and **AVG** to generate metrics for spill incidents.
-	 - **Testing and Optimization**: Queried data from the star schema to verify accuracy, optimizing joins and indexing for efficient querying.
-
-
-### Problems and Strategic Solutions
-
-1. **Which types of materials are most frequently spilled, and what are the common causes?**
-  - This question helps identify high-risk materials and causes, directing preventive measures and resources accordingly.
-  - **Result**: The analysis reveals that certain materials, such as **petroleum** and **hazardous chemicals**, are more frequently involved in spill incidents. The leading causes are often **equipment failure** and **human error**. Based on the result, we suggests to strict equipment maintenance protocols and enhanced safety training to mitigate these common causes.
-
-2. **Are there particular locations or time periods with higher incident rates?**
-   - By identifying high-incident areas and times, resources can be allocated to regions with greater spill risks.
-   - **Result**: High-incident areas include densely **populated urban counties** and **industrial regions**, with incident peaks often observed during certain months or seasons, possibly due to increased transportation and industrial activity. Based on our findings, we recommend hat spill prevention efforts and resource allocation should be prioritized for these high-risk locations and peak times.
-
-3. **What are the environmental and financial impacts of different spill incidents?**
-   - Quantifying impacts helps guide response strategies and prioritize budget allocation for high-impact incidents.
-   - **Result**: The result shows a strong correlation between spill quantity and cleanup costs, with larger spills generally incurring **higher financial and environmental impacts**. We recommends take preventive measures approach for large-scale incidents, as reducing the frequency of major spills could substantially lower remediation costs and environmental damage.
 
 
 
