@@ -10,7 +10,7 @@ On this dashboard, you can explore projects and coursework that showcase my expe
 # Table Content 
 * Projects
    * [Wells Fargo Interpretable Machine Learning for Mortgage Default Prediction](#Default)
-   * [NY State Environment Conservation Project](#SQL)
+   * [NY State Pollution Resolution Project](#SQL)
    * Machine Learning Projects <br>
        - [Bikeshare Optimization](#ML1) <br>
        - [Customer Churn Prediction ](#ML2) <br> 
@@ -234,6 +234,88 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
+## NY State Environment Conservation Project 
+ <a name="SQL"></a>
+
+**Code:** [Jupyter]()
+
+### Purpose 
+Environmental change is a critical issue with far-reaching impacts. New York State, through its Climate Act, aims to reduce economy-wide greenhouse gas emissions by 40% by 2030 and by at least 85% by 2050 from 1990 levels. By analyzing spill incident data across the state, this project seeks to identify types of spill incidents, their causes, and environmental impacts. The findings will inform strategic and tailored remediation programs to enhance regulations, ultimately benefiting the environment and public health in New York State.
+
+
+### Data Limitations & Actions taken 
+-**Limitations**: The dataset contains significant missing values, especially in the Zip Code column, and inconsistencies in older records before 1997. Additional gaps include null values in location and date fields, and some entries are labeled as test records.
+-**Actions Taken**: We removed unnecessary fields (like Zip Code), filtered out data prior to 1997, addressed null values for analysis consistency, and excluded test records and entries with uncertain dates to improve data reliability for our analysis.
+
+
+### Creating Our Star Schema
+
+To analyze environmental spill incidents in New York, we designed a **star schema** for efficient querying and reporting. 
+
+- **Making the Fact Table**
+
+The **fact table**, `Spills_Fact`, was created first to store the core metrics about each spill incident, providing the foundation for analysis.
+
+  - **Columns**:
+    - Foreign keys that would later link to `Date_Dim`, `Location_Dim`, `Cause_Dim`, and `Material_Dim`.
+    - Metrics like `IncidentID`, `QuantitySpilled`, and `QuantityRecovered`.
+  - **Data Loading**:
+    - The fact table was populated with data extracted from the raw dataset, using temporary keys to represent dimension information until the actual dimension tables were created.
+
+| Table            | Purpose                                              | Key Columns                                             |
+|------------------|------------------------------------------------------|---------------------------------------------------------|
+| **Spills_Fact**  | Central fact table with metrics on spill incidents   | IncidentID, MaterialID, CauseID, LocationID, DateID, QuantitySpilled, QuantityRecovered |
+
+
+### Creating and Loading the Dimension Tables
+
+Once the fact table was established, we created the dimension tables to add context to each fact record. Each dimension table was populated with unique data relevant to spill incidents:
+
+1. **Extracting Unique Values**:  
+   - SQL queries were used to identify unique values for each dimension from the raw dataset.
+2. **Cleaning and Transforming**:  
+   - Data formats were standardized, and unnecessary fields were removed to ensure consistency.
+3. **Loading Data**:  
+   - Cleaned data was loaded into each dimension table using SQL `INSERT INTO` statements, with dimension keys linking to the fact table.
+
+| Table            | Purpose                                           | Key Columns                |
+|------------------|---------------------------------------------------|----------------------------|
+| **Date_Dim**     | Provides date-related details                     | DateID, Year, Quarter, Month |
+| **Location_Dim** | Stores location information                       | LocationID, County, Locality, DEC Code |
+| **Cause_Dim**    | Lists causes of spill incidents                   | CauseID, CauseType, CauseCategory |
+| **Material_Dim** | Details on materials involved in spill incidents  | MaterialID, MaterialType |
+
+Each table adds critical context, allowing detailed analysis of each spill’s location, cause, date, and materials involved.
+
+
+### Join Functions and Code Development
+
+We used various SQL `JOIN` functions to retrieve specific results from our star schema, combining data from the fact and dimension tables to answer our business questions.
+
+1. **Join Functions**:
+   - **INNER JOIN**: Ensures only matching records from fact and dimension tables are included, which is useful for precise analysis.
+   - **LEFT JOIN**: Used when needing to include all records from the fact table, even if some dimension values are missing.
+
+2. **Sample Query for Total Spills by Material Type**:
+   ```sql
+   SELECT m.MaterialType, COUNT(f.IncidentID) AS TotalSpills
+   FROM Spills_Fact f
+   INNER JOIN Material_Dim m ON f.MaterialID = m.MaterialID
+   GROUP BY m.MaterialType;
+
+3. **Code Development:**
+   - **Data Cleaning and Transformation**: Ensured data quality through SQL before loading into the star schema.
+	 - **Calculating Incident Metrics**: Used SQL functions like **COUNT**, **SUM**, and **AVG** to generate metrics for spill incidents.
+	 - **Testing and Optimization**: Queried data from the star schema to verify accuracy, optimizing joins and indexing for efficient querying.
+
+
+### Problems and Strategic Solutions
+
+1. **Which types of materials are most frequently spilled, and what are the common causes?**
+  - This question helps identify high-risk materials and causes, directing preventive measures and resources accordingly.
+  <img src="path/to/material_causes_graph.png" alt="Common Causes and Materials in Spill Incidents" width="600">
+
+
 
 ## Customer Churn Prediction 
 <a name="ML2"></a>
@@ -365,12 +447,6 @@ The XGBoost model proved effective in optimizing the bank’s customer retention
   - [x] 📐 **Classification Metrics and Model Evaluation**
 
 
-
-
-
-
-
-## NY State Environment Conservation Project <a name="SQL"></a>
 
 
 
