@@ -136,7 +136,7 @@ The mortgage market plays a crucial role in financial markets. This project deve
 ## NY State Environment Conservation Project 
  <a name="SQL"></a>
 
-**Code:** [Jupyter]()
+**Code:** [Jupyter](https://github.com/seulgi2213/NY-State-Pollution-Analysis-SQL/blob/main/NY%20State%20Pollution%20Resolution.ipynb)
 
 ### Purpose 
 Environmental change is a critical issue with far-reaching impacts. New York State, through its Climate Act, aims to reduce economy-wide greenhouse gas emissions by 40% by 2030 and by at least 85% by 2050 from 1990 levels. By analyzing spill incident data across the state, this project seeks to identify types of spill incidents, their causes, and environmental impacts. The findings will inform strategic and tailored remediation programs to enhance regulations, ultimately benefiting the environment and public health in New York State.
