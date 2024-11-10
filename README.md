@@ -254,8 +254,7 @@ To analyze environmental spill incidents in New York, we designed a **star schem
 
 - **Making the Fact Table**
 
-The **fact table**, `Spills_Fact`, was created first to store the core metrics about each spill incident, providing the foundation for analysis.
-
+  - The fact table, **Spills_Fact**, was created first to store the core metrics about each spill incident, providing the foundation for analysis.
   - **Columns**:
     - Foreign keys that would later link to `Date_Dim`, `Location_Dim`, `Cause_Dim`, and `Material_Dim`.
     - Metrics like `IncidentID`, `QuantitySpilled`, and `QuantityRecovered`.
@@ -313,7 +312,15 @@ We used various SQL `JOIN` functions to retrieve specific results from our star 
 
 1. **Which types of materials are most frequently spilled, and what are the common causes?**
   - This question helps identify high-risk materials and causes, directing preventive measures and resources accordingly.
-  <img src="path/to/material_causes_graph.png" alt="Common Causes and Materials in Spill Incidents" width="600">
+  - **Result**: The analysis reveals that certain materials, such as **petroleum** and **hazardous chemicals**, are more frequently involved in spill incidents. The leading causes are often **equipment failure** and **human error**. Based on the result, we suggests to strict equipment maintenance protocols and enhanced safety training to mitigate these common causes.
+
+2. **Are there particular locations or time periods with higher incident rates?**
+   - By identifying high-incident areas and times, resources can be allocated to regions with greater spill risks.
+   - **Result**: High-incident areas include densely **populated urban counties** and **industrial regions**, with incident peaks often observed during certain months or seasons, possibly due to increased transportation and industrial activity. Based on our findings, we recommend hat spill prevention efforts and resource allocation should be prioritized for these high-risk locations and peak times.
+
+3. **What are the environmental and financial impacts of different spill incidents?**
+   - Quantifying impacts helps guide response strategies and prioritize budget allocation for high-impact incidents.
+   - **Result**: The result shows a strong correlation between spill quantity and cleanup costs, with larger spills generally incurring **higher financial and environmental impacts**. We recommends take preventive measures approach for large-scale incidents, as reducing the frequency of major spills could substantially lower remediation costs and environmental damage.
 
 
 
