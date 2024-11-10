@@ -143,7 +143,7 @@ Environmental change is a critical issue with far-reaching impacts. New York Sta
 
 
 ### Data Limitations & Actions taken 
--**Limitations**: The dataset contains significant missing values, especially in the Zip Code column, and inconsistencies in older records before 1997. Additional gaps include null values in location and date fields, and some entries are labeled as test records.
+-**Limitations**: The dataset contains significant missing values, especially in the Zip Code column, and inconsistencies in older records before 1997. Additional gaps include null values in location and date fields, and some entries are labeled as test records. <br>
 -**Actions Taken**: We removed unnecessary fields (like Zip Code), filtered out data prior to 1997, addressed null values for analysis consistency, and excluded test records and entries with uncertain dates to improve data reliability for our analysis.
 
 
@@ -221,9 +221,18 @@ We used various SQL `JOIN` functions to retrieve specific results from our star 
    - **Result**: Larger spills correlate strongly with higher cleanup costs and greater environmental damage, highlighting the significant impact of large-scale incidents.
    - **Actionable Insight**: Preventive measures should be a priority for large-scale spills to reduce the frequency of major incidents, helping to lower remediation costs and limit environmental harm.
 
+### Skills Earned:
+- [x] 🛠️ **Advanced SQL Functions and Techniques**
+      - **Window Functions** (`ROW_NUMBER()`, `RANK()`, `OVER()`)
+      - **Common Table Expressions (CTEs)** (`WITH` statements)
+      - **Aggregation Functions** (`SUM()`, `AVG()`, `MAX()`, `COUNT()`)
+      - **Case Statements** (`CASE WHEN` logic)
+      - **Joins** (`LEFT JOIN`, `INNER JOIN`, self-joins)
+      - **Subqueries and Nested Queries**: Filtered and aggregated data within larger queries to calculate overall recovery rates.
 
 
-
+### Skills Earned:
+  - [x] 📊 **Data Analysis and Preprocessing**
 
 
 
