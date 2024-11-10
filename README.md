@@ -223,16 +223,16 @@ We used various SQL `JOIN` functions to retrieve specific results from our star 
 
 ### Skills Earned:
 - [x] 🛠️ **Advanced SQL Functions and Techniques**
-      - **Window Functions** (`ROW_NUMBER()`, `RANK()`, `OVER()`)
-      - **Common Table Expressions (CTEs)** (`WITH` statements)
-      - **Aggregation Functions** (`SUM()`, `AVG()`, `MAX()`, `COUNT()`)
-      - **Case Statements** (`CASE WHEN` logic)
-      - **Joins** (`LEFT JOIN`, `INNER JOIN`, self-joins)
-      - **Subqueries and Nested Queries**: Filtered and aggregated data within larger queries to calculate overall recovery rates.
+      - **Window Functions** (`ROW_NUMBER()`, `RANK()`, `OVER()`) <br>
+      - **Common Table Expressions (CTEs)** (`WITH` statements) <br>
+      - **Aggregation Functions** (`SUM()`, `AVG()`, `MAX()`, `COUNT()`) <br> 
+      - **Case Statements** (`CASE WHEN` logic) <br>
+      - **Joins** (`LEFT JOIN`, `INNER JOIN`, self-joins) <br> 
+      - **Subqueries and Nested Queries**: Filtered and aggregated data within larger queries to calculate overall recovery rates. <br>
 
 
-### Skills Earned:
-  - [x] 📊 **Data Analysis and Preprocessing**
+
+
 
 
 
