@@ -325,15 +325,6 @@ This analysis led to the recommendation of **Linear Regression for pickup accura
 
 
 
-### Skills Earned:
-  - [x] 📊 **Data Analysis and Preprocessing**
-  - [x] 🧠 **Statistical Modeling and Machine Learning**
-  - [x] 💻 **Python Programming** (Pandas, NumPy, Scikit-learn)
-  - [x] 📈 **Data Visualization** (Matplotlib, Seaborn)
-  - [x] 📐 **Regression and Model Evaluation Metrics**
-
-
-
 
 
 
@@ -465,6 +456,7 @@ The XGBoost model proved effective in optimizing the bank’s customer retention
   - [x] 🧠 **Statistical Modeling and Machine Learning**
   - [x] 💻 **Python Programming** (Pandas, NumPy, Scikit-learn)
   - [x] 📈 **Data Visualization** (Matplotlib, Seaborn)
+  - [x] 📐 **Regression and Model Evaluation Metrics**
   - [x] 📐 **Classification Metrics and Model Evaluation**
 
 
