@@ -209,15 +209,15 @@ We used various SQL `JOIN` functions to retrieve specific results from our star 
 
 ### Problems and Strategic Solutions
 
-1. Which types of materials are most frequently spilled, and what are the common causes?
+1. **Which types of materials are most frequently spilled, and what are the common causes?**
    - **Result**: Key spills of concern include #6 fuel oil in Gardner Creek Oswego (16 million gallons), gasoline in Long Island Sound (12 million gallons), and diesel in Buffalo River (4 million gallons). Additional spills occur in Stony Creek and Hudson River, but in smaller quantities.
    - **Actionable Insight**: NY State Remediation should prioritize containment strategies and policies focused on these high-risk materials and locations to effectively reduce environmental impact.
 
-2. Are there particular locations or sources with higher spill rates?
+2. **Are there particular locations or sources with higher spill rates?**
    - **Result**: The main spill sources are commercial/industrial sites, major facilities, government institutions, airports, and private dwellings. Equipment failure is the top cause in most cases, with additional incidents from storms and vandalism, particularly at major facilities.
    - **Actionable Insight**: To reduce spills, NY State should focus on stricter maintenance requirements, training certifications, and end-of-life regulations for equipment. Additional actions, like weather-proofing laws, improved security for major facilities, and public education for residential areas, could further mitigate risks.
 
-3. What are the environmental and financial impacts of different spill incidents?
+3. **What are the environmental and financial impacts of different spill incidents?**
    - **Result**: Larger spills correlate strongly with higher cleanup costs and greater environmental damage, highlighting the significant impact of large-scale incidents.
    - **Actionable Insight**: Preventive measures should be a priority for large-scale spills to reduce the frequency of major incidents, helping to lower remediation costs and limit environmental harm.
 
